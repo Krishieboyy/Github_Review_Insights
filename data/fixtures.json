@@ -1,0 +1,88 @@
+[
+  {
+    "id": 1,
+    "body": "Unnecessary.",
+    "path": "src/core/parser.py",
+    "tone": "blunt",
+    "substance": "nit_style",
+    "teaches_why": false,
+    "note": "Terse one-word assertion, no reasoning. Tone is the easy call; substance is debatable (could read as logic)."
+  },
+  {
+    "id": 2,
+    "body": "This will deadlock if two threads call flush() at the same time — the lock is acquired in the wrong order. Swap lines 40 and 41 so the mutex is taken before the channel send.",
+    "path": "src/io/writer.py",
+    "tone": "mentoring",
+    "substance": "logic_bug",
+    "teaches_why": true,
+    "note": "Names a concrete correctness bug AND explains the why + the fix."
+  },
+  {
+    "id": 3,
+    "body": "Nice, this is so much cleaner than the previous version — love it.",
+    "path": "src/api/handlers.py",
+    "tone": "encouraging",
+    "substance": "praise",
+    "teaches_why": false
+  },
+  {
+    "id": 4,
+    "body": "Why are we catching the exception here instead of letting it propagate?",
+    "path": "src/api/handlers.py",
+    "tone": "neutral",
+    "substance": "question",
+    "teaches_why": false,
+    "note": "Pure question, no assertion of an answer."
+  },
+  {
+    "id": 5,
+    "body": "nit: `usr` should be `user` — we spell out identifiers in this codebase.",
+    "path": "src/models/account.py",
+    "tone": "pedantic",
+    "substance": "naming",
+    "teaches_why": true,
+    "note": "Has a 'nit' prefix but is really about naming; gives the convention as the reason. Tests nit_style-vs-naming."
+  },
+  {
+    "id": 6,
+    "body": "I'd pull this validation logic into a separate service layer — right now the handler does both HTTP parsing and business rules, which makes it hard to test in isolation.",
+    "path": "src/api/handlers.py",
+    "tone": "mentoring",
+    "substance": "architecture",
+    "teaches_why": true
+  },
+  {
+    "id": 7,
+    "body": "nit: extra blank line at the end of the file.",
+    "path": "src/utils/text.py",
+    "tone": "neutral",
+    "substance": "nit_style",
+    "teaches_why": false
+  },
+  {
+    "id": 8,
+    "body": "Can you add a test for the case where the list is empty? We don't cover that branch, and it's exactly where the off-by-one would show up.",
+    "path": "tests/test_pagination.py",
+    "tone": "mentoring",
+    "substance": "test_coverage",
+    "teaches_why": true
+  },
+  {
+    "id": 9,
+    "body": "This is wrong.",
+    "path": "src/core/parser.py",
+    "tone": "blunt",
+    "substance": "logic_bug",
+    "teaches_why": false,
+    "note": "Asserts a bug with zero explanation. Tone clearly blunt; teaches_why clearly false."
+  },
+  {
+    "id": 10,
+    "body": "Great catch on the edge case! Tiny thing — could we rename `tmp2` to something descriptive like `parsed_rows`?",
+    "path": "src/core/parser.py",
+    "tone": "encouraging",
+    "substance": "naming",
+    "teaches_why": false,
+    "note": "Mixed praise + naming ask. Labeled by the actionable substance (naming); tests whether the model picks praise instead."
+  }
+]

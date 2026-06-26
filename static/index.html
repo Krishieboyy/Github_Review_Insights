@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Review-Insights</title>
+<style>
+  :root {
+    --bg: #0f1115; --card: #181b22; --line: #2a2f3a; --muted: #8b93a7;
+    --text: #e7ebf3; --accent: #6ea8fe; --good: #3fb950; --warn: #d29922; --bad: #f85149;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    display: flex; justify-content: center; padding: 32px 16px;
+  }
+  main { width: 100%; max-width: 720px; }
+  h1 { font-size: 22px; margin: 0 0 2px; }
+  .sub { color: var(--muted); margin: 0 0 24px; font-size: 13px; }
+  .controls { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  select, input, button {
+    font: inherit; padding: 9px 11px; border-radius: 8px;
+    border: 1px solid var(--line); background: var(--card); color: var(--text);
+  }
+  select { min-width: 220px; }
+  input { width: 160px; }
+  button {
+    background: var(--accent); color: #0b0e14; border: none; font-weight: 600; cursor: pointer;
+  }
+  button:disabled { opacity: .55; cursor: default; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 18px; margin-top: 20px;
+  }
+  .insight {
+    font-size: 19px; line-height: 1.5; border-left: 3px solid var(--accent);
+    padding-left: 14px; margin: 4px 0 6px;
+  }
+  .for { color: var(--muted); font-size: 13px; margin-top: 10px; }
+  .note { color: var(--warn); font-size: 13px; margin: 4px 0 0; }
+  .err { color: var(--bad); }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .05em;
+       color: var(--muted); margin: 22px 0 10px; }
+  .chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip { background: #0f131b; border: 1px solid var(--line); border-radius: 8px;
+          padding: 8px 12px; min-width: 96px; }
+  .chip .k { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .04em; }
+  .chip .v { font-size: 18px; font-weight: 600; }
+  .row { display: grid; grid-template-columns: 110px 1fr 44px; align-items: center;
+         gap: 8px; margin: 4px 0; }
+  .row .lbl { color: var(--muted); font-size: 13px; }
+  .bar { background: #0f131b; border-radius: 5px; height: 14px; overflow: hidden; }
+  .bar > span { display: block; height: 100%; background: var(--accent); }
+  .row .n { text-align: right; color: var(--muted); font-size: 12px; }
+  .muted { color: var(--muted); }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Review-Insights</h1>
+  <p class="sub" id="repoline">One grounded insight per reviewer, from their PR review activity.</p>
+
+  <div class="controls">
+    <select id="picker" title="Pick a reviewer found in the cache"></select>
+    <input id="login" value="Viicos" placeholder="reviewer login" />
+    <button id="go">Get insight</button>
+  </div>
+
+  <div id="status" class="card hidden"></div>
+
+  <div id="result" class="hidden">
+    <div class="card">
+      <div id="insightBox"></div>
+      <div class="for" id="forWho"></div>
+    </div>
+
+    <h2>Key rule stats <span class="muted" id="statsScope"></span></h2>
+    <div class="chips" id="chips"></div>
+
+    <div id="distWrap">
+      <h2>Classified comment distribution <span class="muted" id="sampleSize"></span></h2>
+      <div id="dist"></div>
+    </div>
+  </div>
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const pct = (x) => (x === null || x === undefined) ? "n/a" : Math.round(x * 100) + "%";
+
+// API calls use absolute, origin-relative paths (/reviewers, /reviewers/{login}/insight).
+// Those only reach the backend when this page is served BY the backend over http(s).
+// If it's opened straight off disk (file://), no relative path can hit the API.
+const SERVED_OVER_HTTP = location.protocol === "http:" || location.protocol === "https:";
+
+function showStatus(msg, isErr) {
+  const s = $("status");
+  s.className = "card" + (isErr ? " err" : "");
+  s.textContent = msg;
+  s.classList.remove("hidden");
+}
+function hideStatus() { $("status").classList.add("hidden"); }
+
+async function loadReviewers() {
+  try {
+    const r = await fetch("/reviewers");
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    const d = await r.json();
+    if (d.repo) $("repoline").textContent = "Reviewers of " + d.repo + " — one grounded insight each.";
+    const picker = $("picker");
+    picker.innerHTML = "";
+    for (const rv of d.reviewers) {
+      const o = document.createElement("option");
+      o.value = rv.login;
+      o.textContent = `${rv.login}  (${rv.review_count} reviews, ${rv.comment_count} comments)`;
+      picker.appendChild(o);
+    }
+    // sync default selection to the input if present
+    const def = d.reviewers.find((x) => x.login === $("login").value);
+    if (def) picker.value = def.login;
+  } catch (e) {
+    showStatus("Couldn't load reviewer list: " + e.message + " — is the server running?", true);
+  }
+}
+
+function renderDistRow(container, label, count, total) {
+  const row = document.createElement("div");
+  row.className = "row";
+  const p = total ? count / total : 0;
+  row.innerHTML = `<div class="lbl">${label}</div>
+    <div class="bar"><span style="width:${Math.round(p * 100)}%"></span></div>
+    <div class="n">${count}</div>`;
+  container.appendChild(row);
+}
+
+function renderDistGroup(title, counts, total) {
+  const wrap = document.createElement("div");
+  const h = document.createElement("div");
+  h.className = "lbl";
+  h.style.margin = "10px 0 4px";
+  h.textContent = title;
+  wrap.appendChild(h);
+  const entries = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+  for (const [label, n] of entries) renderDistRow(wrap, label, n, total);
+  return wrap;
+}
+
+function render(d) {
+  $("result").classList.remove("hidden");
+
+  // Insight (or no-key note)
+  const box = $("insightBox");
+  if (d.insight) {
+    box.innerHTML = `<div class="insight">${d.insight}</div>`;
+  } else {
+    box.innerHTML = `<div class="insight muted">No synthesized insight.</div>` +
+      `<div class="note">${d.note || "LLM insight needs a Gemini key (set GEMINI_API_KEY in .env). Rule stats below are still real."}</div>`;
+  }
+  $("forWho").textContent = "for @" + d.login + (d.llm_enabled ? "" : "  ·  LLM layer disabled");
+
+  // Key rule stats
+  const s = d.stats || {};
+  const lat = (s.first_review_latency_hours || {});
+  const vm = (s.verdict_mix || {});
+  const chips = $("chips");
+  chips.innerHTML = "";
+  const add = (k, v) => {
+    const c = document.createElement("div");
+    c.className = "chip";
+    c.innerHTML = `<div class="k">${k}</div><div class="v">${v}</div>`;
+    chips.appendChild(c);
+  };
+  add("reviews", s.review_count ?? "–");
+  add("PRs touched", s.prs_touched ?? "–");
+  add("latency (median)", lat.median != null ? lat.median + "h" : "n/a");
+  add("approved", pct(vm.approved));
+  add("changes req.", pct(vm.changes_requested));
+  add("commented", pct(vm.commented));
+  add("nit ratio", pct(s.nit_ratio));
+
+  // Classified distribution (only when the LLM ran)
+  const distWrap = $("distWrap");
+  const dist = $("dist");
+  dist.innerHTML = "";
+  if (d.classification) {
+    distWrap.classList.remove("hidden");
+    const c = d.classification;
+    $("sampleSize").textContent = "(n=" + c.sample_size + ")";
+    dist.appendChild(renderDistGroup("tone", c.tone || {}, c.sample_size));
+    dist.appendChild(renderDistGroup("substance", c.substance || {}, c.sample_size));
+    dist.appendChild(renderDistGroup(
+      "teaches_why", { true: c.teaches_why_true, false: c.sample_size - c.teaches_why_true },
+      c.sample_size));
+  } else {
+    distWrap.classList.add("hidden");
+  }
+}
+
+async function getInsight() {
+  if (!SERVED_OVER_HTTP) { showStatus(FILE_HINT, true); return; }
+  const login = $("login").value.trim();
+  if (!login) { showStatus("Enter a reviewer login.", true); return; }
+  $("go").disabled = true;
+  $("result").classList.add("hidden");
+  showStatus("Generating insight for @" + login + " … this calls Gemini and can take ~30s.");
+  try {
+    const r = await fetch("/reviewers/" + encodeURIComponent(login) + "/insight");
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok) {
+      const detail = d.detail || ("HTTP " + r.status);
+      throw new Error(typeof detail === "string" ? detail : JSON.stringify(detail));
+    }
+    hideStatus();
+    render(d);
+  } catch (e) {
+    showStatus("Error: " + e.message, true);
+  } finally {
+    $("go").disabled = false;
+  }
+}
+
+const FILE_HINT = "This page is open from the filesystem (" + location.protocol +
+  "), so it can't reach the API. Open it through the server instead: " +
+  "http://127.0.0.1:8000/app";
+
+$("picker").addEventListener("change", (e) => { $("login").value = e.target.value; });
+$("go").addEventListener("click", getInsight);
+$("login").addEventListener("keydown", (e) => { if (e.key === "Enter") getInsight(); });
+
+if (SERVED_OVER_HTTP) {
+  loadReviewers();
+} else {
+  showStatus(FILE_HINT, true);
+}
+</script>
+</body>
+</html>

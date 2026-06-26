@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Keep the demo cache shippable so reviewers can run token-free.
+# Comment the next line out to ship a pre-cached repo.
+# cache/

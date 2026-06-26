@@ -1,0 +1,3176 @@
+{
+  "repo": "pydantic/pydantic",
+  "fetched_at": "2026-06-26T06:16:22.201623+00:00",
+  "max_prs": 150,
+  "pr_count": 150,
+  "pull_requests": [
+    {
+      "number": 13353,
+      "title": "fix: catch ZeroDivisionError in fraction_validator",
+      "author": "C1-BA-B1-F3",
+      "state": "closed",
+      "created_at": "2026-06-26T03:07:39Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13352,
+      "title": "fix: resolve AttributeError for nested pipeline operators",
+      "author": "C1-BA-B1-F3",
+      "state": "open",
+      "created_at": "2026-06-26T02:17:07Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13351,
+      "title": "fix: resolve AttributeError for nested pipeline operators (| and &)",
+      "author": "C1-BA-B1-F3",
+      "state": "closed",
+      "created_at": "2026-06-26T02:12:01Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13350,
+      "title": "fix: catch ZeroDivisionError in fraction_validator for zero-denominator inputs",
+      "author": "C1-BA-B1-F3",
+      "state": "closed",
+      "created_at": "2026-06-26T01:45:40Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13349,
+      "title": "fix: allow __pydantic_init_subclass__ to receive custom kwargs",
+      "author": "C1-BA-B1-F3",
+      "state": "closed",
+      "created_at": "2026-06-26T01:24:56Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13348,
+      "title": "fix: accept scientific notation in Decimal JSON schema pattern",
+      "author": "C1-BA-B1-F3",
+      "state": "closed",
+      "created_at": "2026-06-26T00:57:48Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13347,
+      "title": "fix: preserve pattern constraint for Annotated + BeforeValidator + Optional fields",
+      "author": "C1-BA-B1-F3",
+      "state": "closed",
+      "created_at": "2026-06-26T00:48:52Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13346,
+      "title": "fix: prevent inner unions in collections from incorrectly using top-level strict checking",
+      "author": "C1-BA-B1-F3",
+      "state": "closed",
+      "created_at": "2026-06-25T22:59:14Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13345,
+      "title": "fix: prevent inner unions in collections from incorrectly using top-level strict checking (#13327)",
+      "author": "C1-BA-B1-F3",
+      "state": "closed",
+      "created_at": "2026-06-25T22:55:06Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13344,
+      "title": "fix: reset SerCheck level for collection item serializers in union context",
+      "author": "C1-BA-B1-F3",
+      "state": "closed",
+      "created_at": "2026-06-25T22:03:17Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13343,
+      "title": "docs: update contributing guide to replace pydocstyle with ruff and f…",
+      "author": "GarciaPL",
+      "state": "closed",
+      "created_at": "2026-06-25T17:39:08Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4802492949,
+          "user": "GarciaPL",
+          "body": "please review",
+          "created_at": "2026-06-25T17:40:31Z"
+        }
+      ]
+    },
+    {
+      "number": 13340,
+      "title": "model_copy: do not leak unknown keys into __dict__ when extra != 'allow'",
+      "author": "HrachShah",
+      "state": "open",
+      "created_at": "2026-06-24T13:38:42Z",
+      "merged_at": null,
+      "reviews": [
+        {
+          "id": 4573840759,
+          "user": "DTiming24",
+          "state": "COMMENTED",
+          "body": "This looks like a real invariant fix. One thing I'd double-check in the tests is that the extra='allow' branch still preserves unknown keys in __pydantic_extra__, while model_fields_set only reports declared fields. If that's already covered, LGTM.",
+          "submitted_at": "2026-06-25T18:25:34Z",
+          "commit_id": "5100bcd5fd67b14869bc75826c00f4a8680a81f0"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13339,
+      "title": "Support `Fraction` type in `pydantic-core`",
+      "author": "Viicos",
+      "state": "open",
+      "created_at": "2026-06-24T08:39:01Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13338,
+      "title": "Support mariadbconnector_async dialect in MariaDBDsn",
+      "author": "anahad94",
+      "state": "closed",
+      "created_at": "2026-06-24T06:14:37Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13337,
+      "title": "fix(validators): catch ZeroDivisionError in fraction_validator (#13257)",
+      "author": "sanjibani",
+      "state": "closed",
+      "created_at": "2026-06-24T04:18:54Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13335,
+      "title": "fix: handle ZeroDivisionError in fraction_validator for zero denominators",
+      "author": "ipriyaaanshu",
+      "state": "closed",
+      "created_at": "2026-06-23T05:21:17Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13334,
+      "title": "test: add regression test for polymorphic_serialization with union of BaseModel and arbitrary type",
+      "author": "sanjibani",
+      "state": "open",
+      "created_at": "2026-06-23T04:18:25Z",
+      "merged_at": null,
+      "reviews": [
+        {
+          "id": 4554265649,
+          "user": "mohamedtaqysalmi",
+          "state": "COMMENTED",
+          "body": "Good regression pin for #12553. Parametrizing polymorphic_serialization across default/true/false documents both the historical behavior and the intentional core change to empty-dict output.\n\nThe inline comments explaining when dataclass fields are preserved vs dropped will save triage time for unions mixing BaseModel with arbitrary dataclass types.",
+          "submitted_at": "2026-06-23T14:31:34Z",
+          "commit_id": "87614f55ce36c8cc1c6446c6ad5674093aaba6ee"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13333,
+      "title": "docs(HISTORY): fix broken pydantic.dev version-policy link in v2.13 release notes",
+      "author": "sanjibani",
+      "state": "closed",
+      "created_at": "2026-06-22T06:57:13Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13332,
+      "title": "Use generic `/2/` path for docs links in code examples",
+      "author": "April-Sonnet",
+      "state": "closed",
+      "created_at": "2026-06-22T04:03:57Z",
+      "merged_at": "2026-06-22T07:08:52Z",
+      "reviews": [
+        {
+          "id": 4541826608,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-22T07:08:43Z",
+          "commit_id": "3668049cb4d0e40a61a31fabdf58a678adeeacf3"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13331,
+      "title": "Fix dead link to `datamodel-code-generator` docs",
+      "author": "sanjibani",
+      "state": "closed",
+      "created_at": "2026-06-22T02:40:53Z",
+      "merged_at": "2026-06-22T07:20:48Z",
+      "reviews": [
+        {
+          "id": 4541815623,
+          "user": "Viicos",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2026-06-22T07:06:55Z",
+          "commit_id": "25a64ce5fbb511113ecdf12a4f798b9964094d38"
+        },
+        {
+          "id": 4541819139,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-22T07:07:27Z",
+          "commit_id": "6a867c7699300d4b2e313c1a9a55b25024e68255"
+        }
+      ],
+      "review_comments": [
+        {
+          "id": 3450356053,
+          "user": "Viicos",
+          "body": "```suggestion\n[official documentation](https://datamodel-code-generator.koxudaxi.dev/).\n```",
+          "path": "docs/integrations/datamodel_code_generator.md",
+          "line": null,
+          "diff_hunk": "@@ -104,4 +104,4 @@ class Person(BaseModel):\n ```\n \n More information can be found on the\n-[official documentation](https://koxudaxi.github.io/datamodel-code-generator/)\n+[official documentation](https://koxudaxi.github.io/datamodel-code-generator/) (the github.io docs site appears to be 404 at the moment; the canonical home is the [GitHub repo](https://github.com/koxudaxi/datamodel-code-generator))",
+          "in_reply_to_id": null,
+          "created_at": "2026-06-22T07:06:55Z"
+        }
+      ],
+      "issue_comments": []
+    },
+    {
+      "number": 13330,
+      "title": "docs: fix dead customerioforms newsletter endpoint in index.md",
+      "author": "sanjibani",
+      "state": "closed",
+      "created_at": "2026-06-22T02:40:29Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13329,
+      "title": "Fix dead link to Rust source",
+      "author": "sanjibani",
+      "state": "closed",
+      "created_at": "2026-06-22T02:39:46Z",
+      "merged_at": "2026-06-22T07:21:00Z",
+      "reviews": [
+        {
+          "id": 4541792281,
+          "user": "Viicos",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2026-06-22T07:02:46Z",
+          "commit_id": "ce12596a71dad68bf5a4ac3deab9df83377a5571"
+        },
+        {
+          "id": 4541794709,
+          "user": "Viicos",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2026-06-22T07:03:20Z",
+          "commit_id": "1a1a705966142da4484f586c93dd9277309fe0b7"
+        },
+        {
+          "id": 4541798911,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-22T07:04:08Z",
+          "commit_id": "2b1d1e3ad0cf8035b01bb9364792f88090179f7e"
+        }
+      ],
+      "review_comments": [
+        {
+          "id": 3450338112,
+          "user": "Viicos",
+          "body": "```suggestion\n  (see the [Rust `dec2flt` source](https://doc.rust-lang.org/src/core/num/float_parse.rs.html) for details).\n```",
+          "path": "docs/api/standard_library_types.md",
+          "line": null,
+          "diff_hunk": "@@ -220,7 +220,7 @@ Built-in type: [`float`][].\n \n * Floats are validated as-is.\n * String and bytes are attempted to be converted to floats and validated as-is.\n-  (see the [Rust implementation](https://doc.rust-lang.org/src/core/num/dec2flt/mod.rs.html) for details).\n+  (see the [Rust `dec2flt` source](https://github.com/rust-lang/rust/blob/master/library/core/src/num/dec2flt/mod.rs) for details — the old doc.rust-lang.org/src/ path was retired).",
+          "in_reply_to_id": null,
+          "created_at": "2026-06-22T07:02:46Z"
+        },
+        {
+          "id": 3450340259,
+          "user": "Viicos",
+          "body": "```suggestion\n  (see the [Rust implementation](https://doc.rust-lang.org/src/core/num/float_parse.rs.html) for details).\n```",
+          "path": "docs/api/standard_library_types.md",
+          "line": null,
+          "diff_hunk": "@@ -220,7 +220,7 @@ Built-in type: [`float`][].\n \n * Floats are validated as-is.\n * String and bytes are attempted to be converted to floats and validated as-is.\n-  (see the [Rust implementation](https://doc.rust-lang.org/src/core/num/dec2flt/mod.rs.html) for details).\n+  (see the [Rust `dec2flt` source](https://doc.rust-lang.org/src/core/num/float_parse.rs.html) for details).",
+          "in_reply_to_id": null,
+          "created_at": "2026-06-22T07:03:17Z"
+        }
+      ],
+      "issue_comments": []
+    },
+    {
+      "number": 13328,
+      "title": "Fix TypeAdapter union serialization for duck-typed objects (#13327)",
+      "author": "false200",
+      "state": "closed",
+      "created_at": "2026-06-21T09:49:26Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13326,
+      "title": "Recognise `WindowsPath` as a schema type",
+      "author": "davidhewitt",
+      "state": "closed",
+      "created_at": "2026-06-20T09:05:03Z",
+      "merged_at": "2026-06-20T10:20:59Z",
+      "reviews": [
+        {
+          "id": 4536855127,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-20T09:06:07Z",
+          "commit_id": "9a0f397935dcff2427d1358102e98d94d050ff97"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13324,
+      "title": "fix(docs): correct broken versioned version-policy link in HISTORY.md",
+      "author": "sanjibani",
+      "state": "closed",
+      "created_at": "2026-06-20T03:21:00Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4757015305,
+          "user": "davidhewitt",
+          "body": "Thanks, this is the wrong fix. See #13325.",
+          "created_at": "2026-06-20T08:32:44Z"
+        }
+      ]
+    },
+    {
+      "number": 13323,
+      "title": "Clarify to_json function reference in test_bytes.py comment",
+      "author": "jbvargh",
+      "state": "closed",
+      "created_at": "2026-06-19T15:22:34Z",
+      "merged_at": "2026-06-20T08:34:21Z",
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4752821070,
+          "user": "jbvargh",
+          "body": "please review",
+          "created_at": "2026-06-19T15:23:55Z"
+        }
+      ]
+    },
+    {
+      "number": 13322,
+      "title": "Raise ValidationError for zero-denominator fractions",
+      "author": "GouravSingal-code",
+      "state": "closed",
+      "created_at": "2026-06-19T14:29:52Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13320,
+      "title": "fix: add pathlib.WindowsPath to PATH_TYPES so schema generation works on Windows",
+      "author": "adhavan18",
+      "state": "closed",
+      "created_at": "2026-06-19T08:12:20Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13317,
+      "title": "Add support for `typing.Never`",
+      "author": "Youssefares",
+      "state": "closed",
+      "created_at": "2026-06-17T16:09:23Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13316,
+      "title": "Bump cryptography from 46.0.7 to 48.0.1",
+      "author": "dependabot[bot]",
+      "state": "closed",
+      "created_at": "2026-06-17T14:11:32Z",
+      "merged_at": "2026-06-17T14:59:32Z",
+      "reviews": [
+        {
+          "id": 4516552637,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-17T14:24:57Z",
+          "commit_id": "2915486b3a9f97d977583c9df44e012a3eb7a651"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13315,
+      "title": "Bump aiohttp from 3.14.0 to 3.14.1",
+      "author": "dependabot[bot]",
+      "state": "closed",
+      "created_at": "2026-06-17T12:50:34Z",
+      "merged_at": "2026-06-17T13:18:53Z",
+      "reviews": [
+        {
+          "id": 4515953020,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-17T13:18:45Z",
+          "commit_id": "11dc79ea59615f8c9e16a400fe8116fe89eda107"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13314,
+      "title": "Fix docstring errors in PrivateAttr, Field, and core validators",
+      "author": "CodeNeuron58",
+      "state": "closed",
+      "created_at": "2026-06-16T17:29:20Z",
+      "merged_at": "2026-06-18T14:11:07Z",
+      "reviews": [
+        {
+          "id": 4525667178,
+          "user": "davidhewitt",
+          "state": "APPROVED",
+          "body": "Thanks",
+          "submitted_at": "2026-06-18T14:10:41Z",
+          "commit_id": "cd76a6d024247b0110dd603b837fc566e1f776b1"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4721522649,
+          "user": "CodeNeuron58",
+          "body": "please review",
+          "created_at": "2026-06-16T17:34:25Z"
+        }
+      ]
+    },
+    {
+      "number": 13312,
+      "title": "fix: catch ZeroDivisionError in fraction_validator",
+      "author": "by-Kaimercer",
+      "state": "closed",
+      "created_at": "2026-06-14T19:58:47Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13311,
+      "title": "Add Gitleaks pre-commit hook; annotate ephemeral CI test credentials",
+      "author": "DebasishTripathy13",
+      "state": "closed",
+      "created_at": "2026-06-14T18:45:05Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4702809166,
+          "user": "Viicos",
+          "body": "Thanks but I don't think we want this.",
+          "created_at": "2026-06-14T19:28:36Z"
+        }
+      ]
+    },
+    {
+      "number": 13309,
+      "title": "Fix `ZeroDivisionError` leaking from fraction validator for zero denominator",
+      "author": "ramgsuri",
+      "state": "closed",
+      "created_at": "2026-06-14T14:44:18Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13308,
+      "title": "Document model validator execution order under inheritance",
+      "author": "Nish2005karsh",
+      "state": "open",
+      "created_at": "2026-06-14T05:36:29Z",
+      "merged_at": null,
+      "reviews": [
+        {
+          "id": 4507136056,
+          "user": "strangeleo02",
+          "state": "CHANGES_REQUESTED",
+          "body": "So glad to see this included! I’ve seen so many people get confused by how validators run when inheritance is involved. This is going to be a lifesaver for anyone transitioning to v2.",
+          "submitted_at": "2026-06-16T14:04:10Z",
+          "commit_id": "96f9cdb36e1940d10da8b59bc20b9183c189bb7c"
+        },
+        {
+          "id": 4507983637,
+          "user": "Nish2005karsh",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2026-06-16T15:38:26Z",
+          "commit_id": "96f9cdb36e1940d10da8b59bc20b9183c189bb7c"
+        },
+        {
+          "id": 4554265183,
+          "user": "mohamedtaqysalmi",
+          "state": "APPROVED",
+          "body": "This clarifies a non-obvious inheritance rule: subclass \u0007fter validators do not run inside a base wrap handler's inner handler(data) call. The calls trace example is minimal and makes execution order concrete without over-explaining decorator mechanics.",
+          "submitted_at": "2026-06-23T14:31:30Z",
+          "commit_id": "f5b7554d06b1f3b4420c2f9e03e23297b5d70ebe"
+        }
+      ],
+      "review_comments": [
+        {
+          "id": 3421351145,
+          "user": "strangeleo02",
+          "body": "To avoid any ambiguity where \"once\" might be misread as \"only one time\", it would be slightly clearer to use \"after\" or \"as soon as\":",
+          "path": "docs/concepts/validators.md",
+          "line": null,
+          "diff_hunk": "@@ -551,6 +551,42 @@ decorator.\n \n     Overriding a model validator in a subclass will override the base class' validator, and thus only the subclass' version of said validator will be called.\n \n+    Model validators are ordered by their mode rather than by the class they are defined in. In particular, a *wrap* validator\n+    defined in a base class does **not** wrap the *after* validators defined in a subclass: *after* validators always run once",
+          "in_reply_to_id": null,
+          "created_at": "2026-06-16T14:02:12Z"
+        },
+        {
+          "id": 3422071868,
+          "user": "Nish2005karsh",
+          "body": "Thanks @strangeleo02! Updated \"once\" → \"after\" to remove the ambiguity.\r\n",
+          "path": "docs/concepts/validators.md",
+          "line": null,
+          "diff_hunk": "@@ -551,6 +551,42 @@ decorator.\n \n     Overriding a model validator in a subclass will override the base class' validator, and thus only the subclass' version of said validator will be called.\n \n+    Model validators are ordered by their mode rather than by the class they are defined in. In particular, a *wrap* validator\n+    defined in a base class does **not** wrap the *after* validators defined in a subclass: *after* validators always run once",
+          "in_reply_to_id": 3421351145,
+          "created_at": "2026-06-16T15:38:26Z"
+        }
+      ],
+      "issue_comments": [
+        {
+          "id": 4700850562,
+          "user": "Nish2005karsh",
+          "body": "please review\r\n",
+          "created_at": "2026-06-14T05:51:56Z"
+        }
+      ]
+    },
+    {
+      "number": 13307,
+      "title": "Fix tuple order in `AliasGenerator.generate_aliases()` docstring",
+      "author": "Kropiunig",
+      "state": "closed",
+      "created_at": "2026-06-14T04:17:08Z",
+      "merged_at": "2026-06-15T10:06:44Z",
+      "reviews": [
+        {
+          "id": 4496372202,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-15T10:06:20Z",
+          "commit_id": "e295dd8096faa49e5d490b760158ee1a51d0e929"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13306,
+      "title": "Allow `__pydantic_init_subclass__` to receive custom class keyword arguments",
+      "author": "anneheartrecord",
+      "state": "closed",
+      "created_at": "2026-06-14T00:57:06Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13305,
+      "title": "Add missing namespace utils coverage",
+      "author": "andrewikovic",
+      "state": "closed",
+      "created_at": "2026-06-13T20:57:17Z",
+      "merged_at": null,
+      "reviews": [
+        {
+          "id": 4536812935,
+          "user": "davidhewitt",
+          "state": "COMMENTED",
+          "body": "Thanks for the PR. According to [our latest coverage measurement](https://smokeshow.helpmanual.io/4t6e6b0c5b6n632e3w6c/z_412a780b5b51bae3__namespace_utils_py.html) these paths are already covered. Given they're internal functionality I'm not particularly interested in adding extra tests for them.",
+          "submitted_at": "2026-06-20T08:48:10Z",
+          "commit_id": "10531907fd442c816696824610774f50ec2dfcc7"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4699770058,
+          "user": "andrewikovic",
+          "body": "please review",
+          "created_at": "2026-06-13T20:57:26Z"
+        },
+        {
+          "id": 4765880250,
+          "user": "Viicos",
+          "body": "Closing as per David's comment.",
+          "created_at": "2026-06-22T07:24:27Z"
+        }
+      ]
+    },
+    {
+      "number": 13304,
+      "title": "fixed #13300  __pydantic_init_subclass__ issue",
+      "author": "bhanupra7ap",
+      "state": "closed",
+      "created_at": "2026-06-13T16:07:05Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13303,
+      "title": "Add test coverage for LazyLocalNamespace length",
+      "author": "andrewikovic",
+      "state": "closed",
+      "created_at": "2026-06-13T09:16:37Z",
+      "merged_at": "2026-06-13T14:00:33Z",
+      "reviews": [
+        {
+          "id": 4491505517,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-13T13:58:06Z",
+          "commit_id": "17018a6f9b6361d13065b29d445859c8c32cb45c"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4698116699,
+          "user": "andrewikovic",
+          "body": "please review",
+          "created_at": "2026-06-13T09:22:45Z"
+        }
+      ]
+    },
+    {
+      "number": 13302,
+      "title": "Support non-init dataclass fields with validate_assignment=True",
+      "author": "imranfarooq-dev",
+      "state": "closed",
+      "created_at": "2026-06-12T13:45:53Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13301,
+      "title": "update to PyO3 0.29",
+      "author": "davidhewitt",
+      "state": "open",
+      "created_at": "2026-06-11T21:53:08Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13299,
+      "title": "Add MongoObjectId API docs page",
+      "author": "popsiclelmlm",
+      "state": "closed",
+      "created_at": "2026-06-11T05:04:38Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13298,
+      "title": "docs: mention pickling parametrized generics",
+      "author": "popsiclelmlm",
+      "state": "closed",
+      "created_at": "2026-06-10T23:54:29Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4675817733,
+          "user": "popsiclelmlm",
+          "body": "please review",
+          "created_at": "2026-06-10T23:54:41Z"
+        }
+      ]
+    },
+    {
+      "number": 13296,
+      "title": "Fix PydanticOmit handling for duplicated definition references",
+      "author": "Sujit-1509",
+      "state": "closed",
+      "created_at": "2026-06-10T13:30:33Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13295,
+      "title": "fix: catch ZeroDivisionError in fraction_validator",
+      "author": "lennney",
+      "state": "closed",
+      "created_at": "2026-06-10T05:02:53Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13292,
+      "title": "docs: add serialization context example for model_serializer ",
+      "author": "proustpunk",
+      "state": "open",
+      "created_at": "2026-06-08T10:31:26Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13291,
+      "title": "Handle missing errors with default factories taking validated data",
+      "author": "Viicos",
+      "state": "closed",
+      "created_at": "2026-06-08T07:56:27Z",
+      "merged_at": "2026-06-08T15:49:51Z",
+      "reviews": [
+        {
+          "id": 4450076634,
+          "user": "davidhewitt",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-08T13:48:38Z",
+          "commit_id": "4b2ec2bfc45cafb9a4958165974ae9d1e337fafd"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13290,
+      "title": "docs: add serialization context example for model_serializer",
+      "author": "proustpunk",
+      "state": "closed",
+      "created_at": "2026-06-08T07:03:53Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13289,
+      "title": "fix(decimal): support scientific notation in serialization mode JSON schema",
+      "author": "jlaportebot",
+      "state": "closed",
+      "created_at": "2026-06-07T22:13:47Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13288,
+      "title": "Fix AttributeError on nested pipeline `|` and `&` composition",
+      "author": "gaoflow",
+      "state": "closed",
+      "created_at": "2026-06-07T08:00:35Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13286,
+      "title": "fix: avoid calling default_factory after missing field error",
+      "author": "axelray-dev",
+      "state": "closed",
+      "created_at": "2026-06-07T02:51:25Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13285,
+      "title": "Fix mypy arg-type error on RootModel with coercible input",
+      "author": "clmoon2",
+      "state": "closed",
+      "created_at": "2026-06-07T01:22:11Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13284,
+      "title": "fix: catch ZeroDivisionError in fraction_validator for zero-denominator input",
+      "author": "duongynhi000005-oss",
+      "state": "closed",
+      "created_at": "2026-06-05T15:14:33Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13283,
+      "title": "Fix missing period after 'e.g' in docstrings and grammar in docs",
+      "author": "duongynhi000005-oss",
+      "state": "closed",
+      "created_at": "2026-06-05T15:07:14Z",
+      "merged_at": "2026-06-05T15:25:44Z",
+      "reviews": [
+        {
+          "id": 4437366927,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-05T15:10:44Z",
+          "commit_id": "3036b6d5cfa6258166779e7009c16bc96e714d0f"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13282,
+      "title": "Bump the rust-deps group across 1 directory with 6 updates",
+      "author": "dependabot[bot]",
+      "state": "open",
+      "created_at": "2026-06-05T11:33:19Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13280,
+      "title": "Update `uuid` to 1.23.2",
+      "author": "musicinmybrain",
+      "state": "closed",
+      "created_at": "2026-06-05T05:56:34Z",
+      "merged_at": "2026-06-05T11:30:44Z",
+      "reviews": [
+        {
+          "id": 4435905736,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "Thanks @musicinmybrain ",
+          "submitted_at": "2026-06-05T11:30:36Z",
+          "commit_id": "65e625042eaae3da8eb587e088f6385d52eb0f8e"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4628669449,
+          "user": "musicinmybrain",
+          "body": "When updating `uuid` without adjusting the test expectation, the regression was:\r\n\r\n```\r\n========================================================================================= FAILURES ==========================================================================================\r\n__________________________________________________________________________ test_uuid[not-a-valid-uuid-expected21] ___________________________________________________________________________\r\n\r\ninput_value = 'not-a-valid-uuid', expected = Err('Input should be a valid UUID, invalid character: found `n` at 1')\r\n\r\n    @pytest.mark.parametrize(\r\n        'input_value,expected',\r\n        [\r\n            # Valid UUIDs\r\n            ('12345678-1234-1234-1234-567812345678', UUID('12345678-1234-1234-1234-567812345678')),\r\n            ('550e8400-e29b-41d4-a716-446655440000', UUID('550e8400-e29b-41d4-a716-446655440000')),\r\n            ('f47ac10b-58cc-4372-a567-0e02b2c3d479', UUID('f47ac10b-58cc-4372-a567-0e02b2c3d479')),\r\n            ('123e4567-e89b-12d3-a456-426655440000', UUID('123e4567-e89b-12d3-a456-426655440000')),\r\n            ('de305d54-75b4-431b-adb2-eb6b9e546014', UUID('de305d54-75b4-431b-adb2-eb6b9e546014')),\r\n            ('00000000-0000-0000-0000-000000000000', UUID('00000000-0000-0000-0000-000000000000')),\r\n            ('1b4e28ba-2fa1-11d2-883f-0016d3cca427', UUID('1b4e28ba-2fa1-11d2-883f-0016d3cca427')),\r\n            ('6ba7b810-9dad-11d1-80b4-00c04fd430c8', UUID('6ba7b810-9dad-11d1-80b4-00c04fd430c8')),\r\n            ('886313e1-3b8a-5372-9b90-0c9aee199e5d', UUID('886313e1-3b8a-5372-9b90-0c9aee199e5d')),\r\n            ('c0a8f9a8-aa5e-482b-a067-9cb3a51f5c11', UUID('c0a8f9a8-aa5e-482b-a067-9cb3a51f5c11')),\r\n            ('1efea93d-7bb8-6ea0-afdc-e76cbc0c8e05', UUID('1efea93d-7bb8-6ea0-afdc-e76cbc0c8e05')),\r\n            ('0194fdc2-5d6a-733c-97f9-2feeb9d2a609', UUID('0194fdc2-5d6a-733c-97f9-2feeb9d2a609')),\r\n            ('c0a8f9a8-aa5e-882b-a067-9cb3a51f5c11', UUID('c0a8f9a8-aa5e-882b-a067-9cb3a51f5c11')),\r\n            ('00000000-8000-4000-8000-000000000000', UUID('00000000-8000-4000-8000-000000000000')),\r\n            ('00000000-0000-4000-0000-000000000000', UUID('00000000-0000-4000-0000-000000000000')),\r\n            (MyStr('00000000-0000-4000-0000-000000000000'), UUID('00000000-0000-4000-0000-000000000000')),\r\n            (b'\\x12\\x34\\x56\\x78' * 4, UUID('12345678-1234-5678-1234-567812345678')),\r\n            (b'\\x00\\x00\\x00\\x00' * 4, UUID('00000000-0000-0000-0000-000000000000')),\r\n            (b'ebcdab58-6eb8-46fb-a190-d07a33e9eac8', UUID('ebcdab58-6eb8-46fb-a190-d07a33e9eac8')),\r\n            (UUID('12345678-1234-5678-1234-567812345678'), UUID('12345678-1234-5678-1234-567812345678')),\r\n            (UUID('550e8400-e29b-41d4-a716-446655440000'), UUID('550e8400-e29b-41d4-a716-446655440000')),\r\n            # Invalid UUIDs\r\n            ('not-a-valid-uuid', Err('Input should be a valid UUID, invalid character: found `n` at 1')),\r\n            (\r\n                '12345678-1234-5678-1234-5678123456789',\r\n                Err('Input should be a valid UUID, invalid group length in group 4: expected 12, found 13'),\r\n            ),\r\n            (\r\n                '12345678-1234-1234-1234-1234567890123',\r\n                Err('Input should be a valid UUID, invalid group length in group 4: expected 12, found 13'),\r\n            ),\r\n            (b'\\x00\\x00\\x00\\x000' * 4, Err('Input should be a valid UUID, invalid length: expected 16 bytes, found 20')),\r\n            ('550e8400-e29b-41d4-a716', Err('Input should be a valid UUID, invalid group count: expected 5, found 4')),\r\n            (\r\n                'f47ac10b-58cc-4372-a567-0e02b2c3d47',\r\n                Err('Input should be a valid UUID, invalid group length in group 4: expected 12, found 11'),\r\n            ),\r\n            (\r\n                'de305d54-75b4-431b-adb2-eb6b9e54601',\r\n                Err('Input should be a valid UUID, invalid group length in group 4: expected 12, found 11'),\r\n            ),\r\n            (\r\n                '1b4e28ba-2fa1-11d2-883f-0016d3cca42',\r\n                Err('Input should be a valid UUID, invalid group length in group 4: expected 12, found 11'),\r\n            ),\r\n            (\r\n                '6ba7b810-9dad-11d1-80b4-00c04fd430c',\r\n                Err('Input should be a valid UUID, invalid group length in group 4: expected 12, found 11'),\r\n            ),\r\n            (\r\n                '886313e1-3b8a-5372-9b90-0c9aee199e5',\r\n                Err('Input should be a valid UUID, invalid group length in group 4: expected 12, found 11'),\r\n            ),\r\n            (\r\n                'c0a8f9a8-aa5e-482b-a067-9cb3a51f5c1',\r\n                Err('Input should be a valid UUID, invalid group length in group 4: expected 12, found 11'),\r\n            ),\r\n            (0xA1A2A3A4B1B2C1C2D1D2D3D4D5D6D7D8, Err('UUID input should be a string, bytes or UUID object')),\r\n            (00000000000000000000000000, Err('UUID input should be a string, bytes or UUID object')),\r\n        ],\r\n    )\r\n    def test_uuid(input_value, expected):\r\n        v = SchemaValidator(core_schema.uuid_schema())\r\n        if isinstance(expected, Err):\r\n            with pytest.raises(ValidationError, match=re.escape(expected.message)):\r\n>               result = v.validate_python(input_value)\r\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nE               pydantic_core._pydantic_core.ValidationError: 1 validation error for uuid\r\nE                 Input should be a valid UUID, invalid character: found `n` at 0 [type=uuid_parsing, input_value='not-a-valid-uuid', input_type=str]\r\nE                   For further information visit https://errors.pydantic.dev/latest/v/uuid_parsing\r\n\r\ntests/validators/test_uuid.py:84: ValidationError\r\n\r\nDuring handling of the above exception, another exception occurred:\r\n\r\ninput_value = 'not-a-valid-uuid', expected = Err('Input should be a valid UUID, invalid character: found `n` at 1')\r\n\r\n    @pytest.mark.parametrize(\r\n        'input_value,expected',\r\n        [\r\n            # Valid UUIDs\r\n            ('12345678-1234-1234-1234-567812345678', UUID('12345678-1234-1234-1234-567812345678')),\r\n            ('550e8400-e29b-41d4-a716-446655440000', UUID('550e8400-e29b-41d4-a716-446655440000')),\r\n            ('f47ac10b-58cc-4372-a567-0e02b2c3d479', UUID('f47ac10b-58cc-4372-a567-0e02b2c3d479')),\r\n            ('123e4567-e89b-12d3-a456-426655440000', UUID('123e4567-e89b-12d3-a456-426655440000')),\r\n            ('de305d54-75b4-431b-adb2-eb6b9e546014', UUID('de305d54-75b4-431b-adb2-eb6b9e546014')),\r\n            ('00000000-0000-0000-0000-000000000000', UUID('00000000-0000-0000-0000-000000000000')),\r\n            ('1b4e28ba-2fa1-11d2-883f-0016d3cca427', UUID('1b4e28ba-2fa1-11d2-883f-0016d3cca427')),\r\n            ('6ba7b810-9dad-11d1-80b4-00c04fd430c8', UUID('6ba7b810-9dad-11d1-80b4-00c04fd430c8')),\r\n            ('886313e1-3b8a-5372-9b90-0c9aee199e5d', UUID('886313e1-3b8a-5372-9b90-0c9aee199e5d')),\r\n            ('c0a8f9a8-aa5e-482b-a067-9cb3a51f5c11', UUID('c0a8f9a8-aa5e-482b-a067-9cb3a51f5c11')),\r\n            ('1efea93d-7bb8-6ea0-afdc-e76cbc0c8e05', UUID('1efea93d-7bb8-6ea0-afdc-e76cbc0c8e05')),\r\n            ('0194fdc2-5d6a-733c-97f9-2feeb9d2a609', UUID('0194fdc2-5d6a-733c-97f9-2feeb9d2a609')),\r\n            ('c0a8f9a8-aa5e-882b-a067-9cb3a51f5c11', UUID('c0a8f9a8-aa5e-882b-a067-9cb3a51f5c11')),\r\n            ('00000000-8000-4000-8000-000000000000', UUID('00000000-8000-4000-8000-000000000000')),\r\n            ('00000000-0000-4000-0000-000000000000', UUID('00000000-0000-4000-0000-000000000000')),\r\n            (MyStr('00000000-0000-4000-0000-000000000000'), UUID('00000000-0000-4000-0000-000000000000')),\r\n            (b'\\x12\\x34\\x56\\x78' * 4, UUID('12345678-1234-5678-1234-567812345678')),\r\n            (b'\\x00\\x00\\x00\\x00' * 4, UUID('00000000-0000-0000-0000-000000000000')),\r\n            (b'ebcdab58-6eb8-46fb-a190-d07a33e9eac8', UUID('ebcdab58-6eb8-46fb-a190-d07a33e9eac8')),\r\n            (UUID('12345678-1234-5678-1234-567812345678'), UUID('12345678-1234-5678-1234-567812345678')),\r\n            (UUID('550e8400-e29b-41d4-a716-446655440000'), UUID('550e8400-e29b-41d4-a716-446655440000')),\r\n            # Invalid UUIDs\r\n            ('not-a-valid-uuid', Err('Input should be a valid UUID, invalid character: found `n` at 1')),\r\n            (\r\n                '12345678-1234-5678-1234-5678123456789',\r\n                Err('Input should be a valid UUID, invalid group length in group 4: expected 12, found 13'),\r\n            ),\r\n            (\r\n                '12345678-1234-1234-1234-1234567890123',\r\n                Err('Input should be a valid UUID, invalid group length in group 4: expected 12, found 13'),\r\n            ),\r\n            (b'\\x00\\x00\\x00\\x000' * 4, Err('Input should be a valid UUID, invalid length: expected 16 bytes, found 20')),\r\n            ('550e8400-e29b-41d4-a716', Err('Input should be a valid UUID, invalid group count: expected 5, found 4')),\r\n            (\r\n                'f47ac10b-58cc-4372-a567-0e02b2c3d47',\r\n                Err('Input should be a valid UUID, invalid group length in group 4: expected 12, found 11'),\r\n            ),\r\n            (\r\n                'de305d54-75b4-431b-adb2-eb6b9e54601',\r\n                Err('Input should be a valid UUID, invalid group length in group 4: expected 12, found 11'),\r\n            ),\r\n            (\r\n                '1b4e28ba-2fa1-11d2-883f-0016d3cca42',\r\n                Err('Input should be a valid UUID, invalid group length in group 4: expected 12, found 11'),\r\n            ),\r\n            (\r\n                '6ba7b810-9dad-11d1-80b4-00c04fd430c',\r\n                Err('Input should be a valid UUID, invalid group length in group 4: expected 12, found 11'),\r\n            ),\r\n            (\r\n                '886313e1-3b8a-5372-9b90-0c9aee199e5',\r\n                Err('Input should be a valid UUID, invalid group length in group 4: expected 12, found 11'),\r\n            ),\r\n            (\r\n                'c0a8f9a8-aa5e-482b-a067-9cb3a51f5c1',\r\n                Err('Input should be a valid UUID, invalid group length in group 4: expected 12, found 11'),\r\n            ),\r\n            (0xA1A2A3A4B1B2C1C2D1D2D3D4D5D6D7D8, Err('UUID input should be a string, bytes or UUID object')),\r\n            (00000000000000000000000000, Err('UUID input should be a string, bytes or UUID object')),\r\n        ],\r\n    )\r\n    def test_uuid(input_value, expected):\r\n        v = SchemaValidator(core_schema.uuid_schema())\r\n        if isinstance(expected, Err):\r\n>           with pytest.raises(ValidationError, match=re.escape(expected.message)):\r\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nE           AssertionError: Regex pattern did not match.\r\nE             Expected regex: 'Input\\\\ should\\\\ be\\\\ a\\\\ valid\\\\ UUID,\\\\ invalid\\\\ character:\\\\ found\\\\ `n`\\\\ at\\\\ 1'\r\nE             Actual message: \"1 validation error for uuid\\n  Input should be a valid UUID, invalid character: found `n` at 0 [type=uuid_parsing, input_value='not-a-valid-uuid', input_type=str]\\n    For further information visit https://errors.pydantic.dev/latest/v/uuid_parsing\"\r\n\r\ntests/validators/test_uuid.py:83: AssertionError\r\n                                                       Summary of Failures                                                        \r\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┓\r\n┃  File                           ┃  Function                                ┃  Function Line  ┃  Error Line  ┃  Error           ┃\r\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━┩\r\n│  tests/validators/test_uuid.py  │  test_uuid[not-a-valid-uuid-expected21]  │  15             │  83          │  AssertionError  │\r\n└─────────────────────────────────┴──────────────────────────────────────────┴─────────────────┴──────────────┴──────────────────┘\r\nResults (12.05s):\r\n         1 failed\r\n      5842 passed\r\n       123 skipped\r\n        10 xfailed\r\n        26 subtests passed\r\n```",
+          "created_at": "2026-06-05T05:57:09Z"
+        },
+        {
+          "id": 4628774850,
+          "user": "musicinmybrain",
+          "body": "please review",
+          "created_at": "2026-06-05T06:17:05Z"
+        }
+      ]
+    },
+    {
+      "number": 13279,
+      "title": "begin to replace `with_capacity` with fallible replacement",
+      "author": "davidhewitt",
+      "state": "open",
+      "created_at": "2026-06-04T21:46:22Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13278,
+      "title": "Fix missing `max_length` check on lazy iteration validation",
+      "author": "davidhewitt",
+      "state": "closed",
+      "created_at": "2026-06-04T20:55:51Z",
+      "merged_at": "2026-06-05T09:18:17Z",
+      "reviews": [
+        {
+          "id": 4435099696,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "👍 ",
+          "submitted_at": "2026-06-05T09:18:11Z",
+          "commit_id": "2ab2c08ae84dcbf8efc4c6d9e6cb97fb9010fe0c"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13277,
+      "title": "Use locked dependencies in CI",
+      "author": "Viicos",
+      "state": "closed",
+      "created_at": "2026-06-04T15:30:49Z",
+      "merged_at": "2026-06-04T20:18:49Z",
+      "reviews": [
+        {
+          "id": 4431145868,
+          "user": "davidhewitt",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-04T20:18:46Z",
+          "commit_id": "e4e80a6bd55477ac7efed3829e153ca9e5713b6c"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13276,
+      "title": "Do not resolve recursive `'definitions-ref'` schemas in schema cleaning",
+      "author": "Viicos",
+      "state": "closed",
+      "created_at": "2026-06-04T13:08:07Z",
+      "merged_at": "2026-06-05T09:16:49Z",
+      "reviews": [
+        {
+          "id": 4431143170,
+          "user": "davidhewitt",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-04T20:18:14Z",
+          "commit_id": "1ae2b331814235ea9c4f0a050bd7295564ebfd60"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13275,
+      "title": "Make JSON validation by iteration consistent with getitem approach",
+      "author": "davidhewitt",
+      "state": "open",
+      "created_at": "2026-06-04T12:32:36Z",
+      "merged_at": null,
+      "reviews": [
+        {
+          "id": 4496846653,
+          "user": "LD-RW",
+          "state": "COMMENTED",
+          "body": "Took a closer look at the new `validate_json_by_iteration` extra-key handling — nice cleanup overall. Left two notes inline: one on the `Vec`-based `possible_extra` becoming quadratic on the many-unknown-keys shape (with a suggested `IndexMap` + consumed-keys-set approach to get back to O(N)), and a non-blocking question about whether the per-field `retain` is load-bearing for correctness. Neither is a blocker — mostly want to flag the worst-case path since the CodSpeed suite doesn't seem to cover it.",
+          "submitted_at": "2026-06-15T11:19:29Z",
+          "commit_id": "0f20ebad8b18d124fb27dd5e91b4ad76cc1b5e7f"
+        },
+        {
+          "id": 4554343788,
+          "user": "mohamedtaqysalmi",
+          "state": "COMMENTED",
+          "body": "Switching JSON object validation to indexmap iteration for consistent ordering with getitem is a subtle correctness fix — field validation order can affect error reporting and partial validation behavior. Adding indexmap as an explicit dependency makes the ordering guarantee auditable in Cargo.lock.",
+          "submitted_at": "2026-06-23T14:41:42Z",
+          "commit_id": "0ec7ec1a501ed3e4a30bfd991e4d87735052c444"
+        }
+      ],
+      "review_comments": [
+        {
+          "id": 3413018051,
+          "user": "LD-RW",
+          "body": "performance: `possible_extra` is a `Vec`, which makes the extra-key bookkeeping quadratic on the \"many unknown keys\" shape.\n\nTwo scans compound:\n- L483 `possible_extra.iter_mut().find(|(k, _)| *k == key)` is an O(E) linear scan per buffered key, so building `possible_extra` is O(E²).\n- L504 `possible_extra.retain(|(k, _)| *k != lookup_path.first_key())` is an O(E) scan per field, so the field loop adds O(F·E).\n\nTotal is O(E² + F·E). For `extra='allow'`/`'forbid'` inputs that are mostly unknown keys (E ≈ N), that collapses to O(N²). The previous getitem path buffered extras straight into a `PyDict` via `set_item` — O(1) amortized per key, O(N) overall — so this is a worst-case regression on that specific shape. The CodSpeed run here (+7.27%, 8 benchmarks) doesn't include a large-extra-dict case, so the regression isn't visible in CI.\n\nSuggested approach: back `possible_extra` with an insertion-ordered map (e.g. `indexmap::IndexMap<&str, &JsonValue>`) so the L483 dedup becomes an O(1) `insert` while still preserving appearance order. For L504, rather than an O(E) `retain` per field, collect consumed first-keys into an `AHashSet<&str>` during the field loop (this file already uses `AHashSet<&str>` for `used_keys` on the dict path) and skip them in the final emit loop at L514 — that makes the field-side cost O(F + E). Net result is back to O(N).",
+          "path": "pydantic-core/src/validators/model_fields.rs",
+          "line": null,
+          "diff_hunk": "@@ -454,248 +409,273 @@ impl ModelFieldsValidator {\n                             continue;\n                         }\n \n-                        let value = value.borrow_input();\n                         // Unknown / extra field\n-                        match self.extra_behavior {\n-                            ExtraBehavior::Forbid => {\n-                                self.errors.push(ValLineError::new_with_loc(\n-                                    ErrorTypeDefaults::ExtraForbidden,\n-                                    value,\n-                                    raw_key.clone(),\n-                                ));\n-                            }\n-                            ExtraBehavior::Ignore => {}\n-                            ExtraBehavior::Allow => {\n-                                let py_key = match self.extras_keys_validator {\n-                                    Some(validator) => {\n-                                        match validator.validate(self.py, raw_key.borrow_input(), self.state) {\n-                                            Ok(value) => value.cast_bound::<PyString>(self.py)?.clone(),\n-                                            Err(ValError::LineErrors(line_errors)) => {\n-                                                for err in line_errors {\n-                                                    self.errors.push(err.with_outer_location(raw_key.clone()));\n-                                                }\n-                                                continue;\n-                                            }\n-                                            Err(err) => return Err(err),\n-                                        }\n-                                    }\n-                                    None => either_str.as_py_string(self.py, self.state.cache_str()),\n-                                };\n-\n-                                if let Some(validator) = self.extras_validator {\n-                                    match validator.validate(self.py, value, self.state) {\n-                                        Ok(value) => {\n-                                            model_extra_dict.set_item(&py_key, value)?;\n-                                            self.fields_set_vec.push(py_key.try_into()?);\n-                                        }\n-                                        Err(ValError::LineErrors(line_errors)) => {\n-                                            for err in line_errors {\n-                                                self.errors.push(err.with_outer_location(raw_key.clone()));\n-                                            }\n-                                        }\n-                                        Err(err) => return Err(err),\n-                                    }\n-                                } else {\n-                                    model_extra_dict.set_item(&py_key, value.to_object(self.py)?)?;\n-                                    self.fields_set_vec.push(py_key.try_into()?);\n-                                }\n-                            }\n-                        }\n+                        self.state.validate_extra_key_value(self.py, &cow, value)?;\n                     }\n-                    Ok(model_extra_dict)\n+                    Ok(())\n                 }\n             }\n \n-            let model_extra_dict = dict.iterate(ValidateToModelExtra {\n-                py,\n-                used_keys,\n-                errors: &mut errors,\n-                fields_set_vec: &mut fields_set_vec,\n-                extra_behavior,\n-                extras_validator: self.extras_validator.as_deref(),\n-                extras_keys_validator: self.extras_keys_validator.as_deref(),\n-                state,\n-            })??;\n-\n-            if matches!(extra_behavior, ExtraBehavior::Allow) {\n-                model_extra_dict_op = Some(model_extra_dict);\n-            }\n+            dict.iterate(ValidateToModelExtra { state, py, used_keys })??;\n         }\n \n-        if !errors.is_empty() {\n-            Err(ValError::LineErrors(errors))\n-        } else {\n-            let fields_set = PySet::new(py, &fields_set_vec)?;\n-            state.add_fields_set(fields_set_count);\n-\n-            // if we have extra=allow, but we didn't create a dict because we were validating\n-            // from attributes, set it now so __pydantic_extra__ is always a dict if extra=allow\n-            if matches!(extra_behavior, ExtraBehavior::Allow) && model_extra_dict_op.is_none() {\n-                model_extra_dict_op = Some(PyDict::new(py));\n-            }\n-\n-            Ok((model_dict, model_extra_dict_op, fields_set))\n-        }\n+        Ok(())\n     }\n \n     fn validate_json_by_iteration<'py>(\n         &self,\n         py: Python<'py>,\n         json_input: &JsonValue<'_>,\n         json_object: &JsonObject<'_>,\n-        state: &mut ValidationState<'_, 'py>,\n-    ) -> ValResult<ValidatedModelFields<'py>> {\n+        state: &mut ModelFieldsValidationState<'_, '_, 'py>,\n+    ) -> ValResult<()> {\n         // expect json_input and json_object to be the same thing, just projected\n         debug_assert!(matches!(&json_input, JsonValue::Object(j) if Arc::ptr_eq(j, json_object)));\n \n-        let extra_behavior = state.extra_behavior_or(self.extra_behavior);\n-        let validate_by_alias = state.validate_by_alias_or(self.validate_by_alias);\n-        let validate_by_name = state.validate_by_name_or(self.validate_by_name);\n-        let lookup_type = LookupType::from_bools(validate_by_alias, validate_by_name)?;\n-\n-        let model_dict = PyDict::new(py);\n-        let mut model_extra_dict_op: Option<Bound<PyDict>> = None;\n-        let mut field_results: Vec<Option<(LookupFieldInfo, &JsonValue)>> =\n+        // Individual inputs for each field. There is some complicated decision making\n+        // around which field input to use if multiple lookup paths match:\n+        // - aliases are preferred over field names (if validating by alias)\n+        // - later inputs for *the same path* are preferred over earlier inputs\n+        //\n+        // Once the iteration is complete, the highest priority input for each field\n+        // is validated and the rest are propagated into extra (if necessary).\n+        let mut field_inputs: Vec<Option<(LookupFieldInfo, &JsonValue)>> =\n             (0..self.fields.len()).map(|_| None).collect();\n-        let mut errors: Vec<ValLineError> = Vec::new();\n-        let fields_set = PySet::empty(py)?;\n \n-        let state = &mut state.scoped_set_data(Some(model_dict.clone()));\n-        let state = &mut state.scoped_clear_field_error();\n+        // Buffer for possible extra data, `None` if ignoring extra. Extra data\n+        // is validated in order of appearance after all fields have been processed.\n+        let mut possible_extra = (!matches!(&state.extra_validator, ModelExtraValidator::Ignore)).then_some(Vec::new());\n \n-        let model_extra_dict = PyDict::new(py);\n         for (key, value) in &**json_object {\n-            let mut handled = false;\n+            let mut might_be_extra = possible_extra.is_some();\n             let key = key.as_ref();\n             for (field_info, field_value) in self.lookup.iter_matches(key, value) {\n-                handled = true;\n-\n-                if !field_info.matches_lookup(lookup_type) {\n+                if !field_info.matches_lookup(state.lookup_type) {\n                     continue;\n                 }\n \n-                let field_result = &mut field_results[field_info.field_index];\n+                let field_input = &mut field_inputs[field_info.field_index];\n \n-                // later results are preferred unless the existing result has come from a higher priority alias\n-                if let Some((existing_field_info, _)) = &field_result\n+                // later inputs are preferred unless the existing input has come from a higher priority alias\n+                if let Some((existing_field_info, _)) = &field_input\n                     && existing_field_info\n                         .lookup_priority\n                         .is_higher_priority_than(&field_info.lookup_priority)\n                 {\n                     continue;\n                 }\n \n-                *field_result = Some((*field_info, field_value));\n-            }\n+                *field_input = Some((*field_info, field_value));\n \n-            if handled {\n-                continue;\n+                if might_be_extra\n+                    && field_info\n+                        .lookup_priority\n+                        .is_maximum_priority_for_lookup_type(state.lookup_type)\n+                {\n+                    // this input is definitely going to consume the key, so we don't want to\n+                    // buffer it in possible_extra\n+                    might_be_extra = false;\n+                }\n             }\n \n-            // Unknown / extra field - we currently only care about these at the top level\n-            match extra_behavior {\n-                ExtraBehavior::Forbid => {\n-                    errors.push(ValLineError::new_with_loc(\n-                        ErrorTypeDefaults::ExtraForbidden,\n-                        value,\n-                        key,\n-                    ));\n-                }\n-                ExtraBehavior::Ignore => {}\n-                ExtraBehavior::Allow => {\n-                    let py_key: Bound<'_, PyString> = new_py_string(py, key, state.cache_str());\n-                    if let Some(validator) = &self.extras_validator {\n-                        match validator.validate(py, value, state) {\n-                            Ok(value) => {\n-                                model_extra_dict.set_item(&py_key, value)?;\n-                                fields_set.add(py_key)?;\n-                            }\n-                            Err(ValError::LineErrors(line_errors)) => {\n-                                for err in line_errors {\n-                                    errors.push(err.with_outer_location(key));\n-                                }\n-                            }\n-                            Err(err) => return Err(err),\n-                        }\n-                    } else {\n-                        model_extra_dict.set_item(&py_key, value)?;\n-                        fields_set.add(py_key)?;\n-                    }\n+            if might_be_extra {\n+                let possible_extra = possible_extra.as_mut().expect(\"must be Some if might_be_extra is true\");\n+                if let Some(existing) = possible_extra.iter_mut().find(|(k, _)| *k == key) {",
+          "in_reply_to_id": null,
+          "created_at": "2026-06-15T11:17:13Z"
+        },
+        {
+          "id": 3413021447,
+          "user": "LD-RW",
+          "body": "question (non-blocking): is the per-field `retain` at L504 load-bearing for correctness, or purely an optimization to avoid emitting a key that a later field consumes? If a buffered key can only ever be claimed by exactly one field's `first_key`, a single membership check against a consumed-keys set at emit time would be equivalent and avoids the repeated removal. Want to confirm I'm not missing a case where the same buffered key must survive for one field but be dropped for another.",
+          "path": "pydantic-core/src/validators/model_fields.rs",
+          "line": null,
+          "diff_hunk": "@@ -454,248 +409,273 @@ impl ModelFieldsValidator {\n                             continue;\n                         }\n \n-                        let value = value.borrow_input();\n                         // Unknown / extra field\n-                        match self.extra_behavior {\n-                            ExtraBehavior::Forbid => {\n-                                self.errors.push(ValLineError::new_with_loc(\n-                                    ErrorTypeDefaults::ExtraForbidden,\n-                                    value,\n-                                    raw_key.clone(),\n-                                ));\n-                            }\n-                            ExtraBehavior::Ignore => {}\n-                            ExtraBehavior::Allow => {\n-                                let py_key = match self.extras_keys_validator {\n-                                    Some(validator) => {\n-                                        match validator.validate(self.py, raw_key.borrow_input(), self.state) {\n-                                            Ok(value) => value.cast_bound::<PyString>(self.py)?.clone(),\n-                                            Err(ValError::LineErrors(line_errors)) => {\n-                                                for err in line_errors {\n-                                                    self.errors.push(err.with_outer_location(raw_key.clone()));\n-                                                }\n-                                                continue;\n-                                            }\n-                                            Err(err) => return Err(err),\n-                                        }\n-                                    }\n-                                    None => either_str.as_py_string(self.py, self.state.cache_str()),\n-                                };\n-\n-                                if let Some(validator) = self.extras_validator {\n-                                    match validator.validate(self.py, value, self.state) {\n-                                        Ok(value) => {\n-                                            model_extra_dict.set_item(&py_key, value)?;\n-                                            self.fields_set_vec.push(py_key.try_into()?);\n-                                        }\n-                                        Err(ValError::LineErrors(line_errors)) => {\n-                                            for err in line_errors {\n-                                                self.errors.push(err.with_outer_location(raw_key.clone()));\n-                                            }\n-                                        }\n-                                        Err(err) => return Err(err),\n-                                    }\n-                                } else {\n-                                    model_extra_dict.set_item(&py_key, value.to_object(self.py)?)?;\n-                                    self.fields_set_vec.push(py_key.try_into()?);\n-                                }\n-                            }\n-                        }\n+                        self.state.validate_extra_key_value(self.py, &cow, value)?;\n                     }\n-                    Ok(model_extra_dict)\n+                    Ok(())\n                 }\n             }\n \n-            let model_extra_dict = dict.iterate(ValidateToModelExtra {\n-                py,\n-                used_keys,\n-                errors: &mut errors,\n-                fields_set_vec: &mut fields_set_vec,\n-                extra_behavior,\n-                extras_validator: self.extras_validator.as_deref(),\n-                extras_keys_validator: self.extras_keys_validator.as_deref(),\n-                state,\n-            })??;\n-\n-            if matches!(extra_behavior, ExtraBehavior::Allow) {\n-                model_extra_dict_op = Some(model_extra_dict);\n-            }\n+            dict.iterate(ValidateToModelExtra { state, py, used_keys })??;\n         }\n \n-        if !errors.is_empty() {\n-            Err(ValError::LineErrors(errors))\n-        } else {\n-            let fields_set = PySet::new(py, &fields_set_vec)?;\n-            state.add_fields_set(fields_set_count);\n-\n-            // if we have extra=allow, but we didn't create a dict because we were validating\n-            // from attributes, set it now so __pydantic_extra__ is always a dict if extra=allow\n-            if matches!(extra_behavior, ExtraBehavior::Allow) && model_extra_dict_op.is_none() {\n-                model_extra_dict_op = Some(PyDict::new(py));\n-            }\n-\n-            Ok((model_dict, model_extra_dict_op, fields_set))\n-        }\n+        Ok(())\n     }\n \n     fn validate_json_by_iteration<'py>(\n         &self,\n         py: Python<'py>,\n         json_input: &JsonValue<'_>,\n         json_object: &JsonObject<'_>,\n-        state: &mut ValidationState<'_, 'py>,\n-    ) -> ValResult<ValidatedModelFields<'py>> {\n+        state: &mut ModelFieldsValidationState<'_, '_, 'py>,\n+    ) -> ValResult<()> {\n         // expect json_input and json_object to be the same thing, just projected\n         debug_assert!(matches!(&json_input, JsonValue::Object(j) if Arc::ptr_eq(j, json_object)));\n \n-        let extra_behavior = state.extra_behavior_or(self.extra_behavior);\n-        let validate_by_alias = state.validate_by_alias_or(self.validate_by_alias);\n-        let validate_by_name = state.validate_by_name_or(self.validate_by_name);\n-        let lookup_type = LookupType::from_bools(validate_by_alias, validate_by_name)?;\n-\n-        let model_dict = PyDict::new(py);\n-        let mut model_extra_dict_op: Option<Bound<PyDict>> = None;\n-        let mut field_results: Vec<Option<(LookupFieldInfo, &JsonValue)>> =\n+        // Individual inputs for each field. There is some complicated decision making\n+        // around which field input to use if multiple lookup paths match:\n+        // - aliases are preferred over field names (if validating by alias)\n+        // - later inputs for *the same path* are preferred over earlier inputs\n+        //\n+        // Once the iteration is complete, the highest priority input for each field\n+        // is validated and the rest are propagated into extra (if necessary).\n+        let mut field_inputs: Vec<Option<(LookupFieldInfo, &JsonValue)>> =\n             (0..self.fields.len()).map(|_| None).collect();\n-        let mut errors: Vec<ValLineError> = Vec::new();\n-        let fields_set = PySet::empty(py)?;\n \n-        let state = &mut state.scoped_set_data(Some(model_dict.clone()));\n-        let state = &mut state.scoped_clear_field_error();\n+        // Buffer for possible extra data, `None` if ignoring extra. Extra data\n+        // is validated in order of appearance after all fields have been processed.\n+        let mut possible_extra = (!matches!(&state.extra_validator, ModelExtraValidator::Ignore)).then_some(Vec::new());\n \n-        let model_extra_dict = PyDict::new(py);\n         for (key, value) in &**json_object {\n-            let mut handled = false;\n+            let mut might_be_extra = possible_extra.is_some();\n             let key = key.as_ref();\n             for (field_info, field_value) in self.lookup.iter_matches(key, value) {\n-                handled = true;\n-\n-                if !field_info.matches_lookup(lookup_type) {\n+                if !field_info.matches_lookup(state.lookup_type) {\n                     continue;\n                 }\n \n-                let field_result = &mut field_results[field_info.field_index];\n+                let field_input = &mut field_inputs[field_info.field_index];\n \n-                // later results are preferred unless the existing result has come from a higher priority alias\n-                if let Some((existing_field_info, _)) = &field_result\n+                // later inputs are preferred unless the existing input has come from a higher priority alias\n+                if let Some((existing_field_info, _)) = &field_input\n                     && existing_field_info\n                         .lookup_priority\n                         .is_higher_priority_than(&field_info.lookup_priority)\n                 {\n                     continue;\n                 }\n \n-                *field_result = Some((*field_info, field_value));\n-            }\n+                *field_input = Some((*field_info, field_value));\n \n-            if handled {\n-                continue;\n+                if might_be_extra\n+                    && field_info\n+                        .lookup_priority\n+                        .is_maximum_priority_for_lookup_type(state.lookup_type)\n+                {\n+                    // this input is definitely going to consume the key, so we don't want to\n+                    // buffer it in possible_extra\n+                    might_be_extra = false;\n+                }\n             }\n \n-            // Unknown / extra field - we currently only care about these at the top level\n-            match extra_behavior {\n-                ExtraBehavior::Forbid => {\n-                    errors.push(ValLineError::new_with_loc(\n-                        ErrorTypeDefaults::ExtraForbidden,\n-                        value,\n-                        key,\n-                    ));\n-                }\n-                ExtraBehavior::Ignore => {}\n-                ExtraBehavior::Allow => {\n-                    let py_key: Bound<'_, PyString> = new_py_string(py, key, state.cache_str());\n-                    if let Some(validator) = &self.extras_validator {\n-                        match validator.validate(py, value, state) {\n-                            Ok(value) => {\n-                                model_extra_dict.set_item(&py_key, value)?;\n-                                fields_set.add(py_key)?;\n-                            }\n-                            Err(ValError::LineErrors(line_errors)) => {\n-                                for err in line_errors {\n-                                    errors.push(err.with_outer_location(key));\n-                                }\n-                            }\n-                            Err(err) => return Err(err),\n-                        }\n-                    } else {\n-                        model_extra_dict.set_item(&py_key, value)?;\n-                        fields_set.add(py_key)?;\n-                    }\n+            if might_be_extra {\n+                let possible_extra = possible_extra.as_mut().expect(\"must be Some if might_be_extra is true\");\n+                if let Some(existing) = possible_extra.iter_mut().find(|(k, _)| *k == key) {\n+                    // if the key is already in possible_extra, we update the value to the latest one\n+                    existing.1 = value;\n+                } else {\n+                    possible_extra.push((key, value));\n                 }\n             }\n         }\n \n-        // now that we've iterated over all the keys, we can set the values in the model\n-        // dict, and try to set defaults for any missing fields\n+        // handle all inputs for fields\n+        for (field, field_input) in std::iter::zip(&self.fields, field_inputs) {\n+            let field_input_with_lookup_path = field_input.map(|(field_info, value)| {\n+                let lookup_path = if let Some(alias_index) = field_info.alias_index() {\n+                    &field.lookup_path_collection.by_alias[alias_index]\n+                } else {\n+                    &field.lookup_path_collection.by_name\n+                };\n+\n+                // remove any existing possible extra for this lookup path's first key,\n+                // since it has been consumed by the input\n+                if let Some(possible_extra) = possible_extra.as_mut() {\n+                    possible_extra.retain(|(k, _)| *k != lookup_path.first_key());",
+          "in_reply_to_id": null,
+          "created_at": "2026-06-15T11:17:55Z"
+        }
+      ],
+      "issue_comments": []
+    },
+    {
+      "number": 13274,
+      "title": "Refactor _type_alias_type_schema for recursion guard",
+      "author": "NallaSumang",
+      "state": "closed",
+      "created_at": "2026-06-04T11:51:55Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4621871809,
+          "user": "NallaSumang",
+          "body": "please review",
+          "created_at": "2026-06-04T11:52:07Z"
+        }
+      ]
+    },
+    {
+      "number": 13273,
+      "title": "Fix typos in internals documentation",
+      "author": "SurfyPenguin",
+      "state": "closed",
+      "created_at": "2026-06-04T11:16:46Z",
+      "merged_at": "2026-06-04T20:19:45Z",
+      "reviews": [
+        {
+          "id": 4428107092,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-04T13:15:16Z",
+          "commit_id": "a9749f1ecf27b6f85e241ef8eb837f08deb0f42d"
+        },
+        {
+          "id": 4431149872,
+          "user": "davidhewitt",
+          "state": "APPROVED",
+          "body": "Thanks!",
+          "submitted_at": "2026-06-04T20:19:34Z",
+          "commit_id": "a9749f1ecf27b6f85e241ef8eb837f08deb0f42d"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4621639053,
+          "user": "SurfyPenguin",
+          "body": "please review",
+          "created_at": "2026-06-04T11:17:24Z"
+        }
+      ]
+    },
+    {
+      "number": 13271,
+      "title": "Resolve inherited field forward refs using the base class namespace",
+      "author": "LeSingh1",
+      "state": "closed",
+      "created_at": "2026-06-04T05:56:09Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13270,
+      "title": "Allow scientific notation in Decimal JSON schema pattern",
+      "author": "raywcm",
+      "state": "closed",
+      "created_at": "2026-06-04T02:23:51Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13269,
+      "title": "Allow None as type argument in __class_getitem__",
+      "author": "raywcm",
+      "state": "closed",
+      "created_at": "2026-06-04T02:10:20Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13268,
+      "title": "Fix fraction_validator not catching ZeroDivisionError",
+      "author": "raywcm",
+      "state": "closed",
+      "created_at": "2026-06-04T01:55:42Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13267,
+      "title": "Bump aiohttp from 3.13.4 to 3.14.0",
+      "author": "dependabot[bot]",
+      "state": "closed",
+      "created_at": "2026-06-03T23:41:58Z",
+      "merged_at": "2026-06-04T07:01:23Z",
+      "reviews": [
+        {
+          "id": 4425582397,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-04T07:01:11Z",
+          "commit_id": "f9f5e65f215a7dcfa6898d647442feed3466f637"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13265,
+      "title": "fix: catch ZeroDivisionError in fraction_validator for zero-denominator input",
+      "author": "michaelxer",
+      "state": "closed",
+      "created_at": "2026-06-03T12:35:30Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13264,
+      "title": "Bump the rust-deps group in /pydantic-core with 7 updates",
+      "author": "dependabot[bot]",
+      "state": "closed",
+      "created_at": "2026-06-03T10:41:20Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13263,
+      "title": "Bump PyO3/maturin-action from 1.50.1 to 1.51.0",
+      "author": "dependabot[bot]",
+      "state": "closed",
+      "created_at": "2026-06-03T10:24:25Z",
+      "merged_at": "2026-06-03T11:02:33Z",
+      "reviews": [
+        {
+          "id": 4417874630,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-03T11:02:26Z",
+          "commit_id": "35aa210f09dfa27bd11af33971cd3b4a5265cad7"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13262,
+      "title": "Bump pnpm/action-setup from 5.0.0 to 6.0.8",
+      "author": "dependabot[bot]",
+      "state": "closed",
+      "created_at": "2026-06-03T10:24:03Z",
+      "merged_at": "2026-06-04T20:21:01Z",
+      "reviews": [
+        {
+          "id": 4431157249,
+          "user": "davidhewitt",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-04T20:20:51Z",
+          "commit_id": "1efba13512104d26cdbfa5237f6e8b39d743be93"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13261,
+      "title": "Bump pypa/gh-action-pypi-publish from 1.13.0 to 1.14.0",
+      "author": "dependabot[bot]",
+      "state": "closed",
+      "created_at": "2026-06-03T10:23:53Z",
+      "merged_at": "2026-06-03T11:02:04Z",
+      "reviews": [
+        {
+          "id": 4417871907,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-03T11:01:57Z",
+          "commit_id": "2d09e7b06ef5c4e60b87d4d939a57f4704e278ec"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13260,
+      "title": "Bump actions/upload-artifact from 7.0.0 to 7.0.1",
+      "author": "dependabot[bot]",
+      "state": "closed",
+      "created_at": "2026-06-03T10:23:48Z",
+      "merged_at": "2026-06-03T11:01:23Z",
+      "reviews": [
+        {
+          "id": 4417867695,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-03T11:01:16Z",
+          "commit_id": "de5fa9cb61ba57c0ebbf24d41d139ca5aa01f431"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13259,
+      "title": "Bump uraimo/run-on-arch-action from 3.0.1 to 3.1.0",
+      "author": "dependabot[bot]",
+      "state": "closed",
+      "created_at": "2026-06-03T10:23:41Z",
+      "merged_at": "2026-06-03T11:00:48Z",
+      "reviews": [
+        {
+          "id": 4417863086,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-03T11:00:40Z",
+          "commit_id": "64e6ad0eb95b1188ec00cc9d14953e67a5404969"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13258,
+      "title": "fix: catch ZeroDivisionError in fraction_validator for zero-denominator input",
+      "author": "godfengliang",
+      "state": "closed",
+      "created_at": "2026-06-03T02:26:56Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13256,
+      "title": "fix(json_schema): support scientific notation in Decimal serialization pattern",
+      "author": "sijie-Z",
+      "state": "closed",
+      "created_at": "2026-06-02T12:45:24Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13251,
+      "title": "👥 Update Pydantic People",
+      "author": "github-actions[bot]",
+      "state": "closed",
+      "created_at": "2026-06-01T14:01:43Z",
+      "merged_at": "2026-06-02T13:27:26Z",
+      "reviews": [
+        {
+          "id": 4401919811,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-01T14:13:32Z",
+          "commit_id": "d19f2e0f6024e5f058658979f2863c9d85ea679e"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13250,
+      "title": "Support deferred annotations in `@validate_call`",
+      "author": "ashishpatel26",
+      "state": "closed",
+      "created_at": "2026-06-01T05:25:08Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4590108118,
+          "user": "ashishpatel26",
+          "body": "The `test_field_function_validator` benchmark is in `pydantic-core` and exercises `pydantic_core.SchemaValidator.validate_python()` directly — it does not import or use `validate_call`. This PR only modifies `pydantic/_internal/_validate_call.py` at decoration time (Python, not Rust). There is no code path connecting this change to that benchmark.\n\nCodSpeed itself flagged **\"Different runtime environments detected\"** for this comparison — the 5.61% delta is measurement noise, not a real regression.",
+          "created_at": "2026-06-01T06:32:06Z"
+        }
+      ]
+    },
+    {
+      "number": 13249,
+      "title": "Document multi-host DSN migration",
+      "author": "morning-verlu",
+      "state": "closed",
+      "created_at": "2026-05-31T14:45:56Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13248,
+      "title": "Validate falsy `AliasGenerator` outputs",
+      "author": "jiyujie2006",
+      "state": "closed",
+      "created_at": "2026-05-31T07:23:01Z",
+      "merged_at": "2026-06-01T07:09:22Z",
+      "reviews": [
+        {
+          "id": 4398087120,
+          "user": "t0ugh-sys",
+          "state": "COMMENTED",
+          "body": "## Review: Validate falsy AliasGenerator outputs\n\nThis is a clean, well-targeted fix. Here are my observations:\n\n### What's Good\n\n- **Correct root cause identification.** The bug was a truthiness check (`if alias`) that silently dropped valid falsy alias values (like `\"\"`) and let invalid falsy values (like `0`, `False`, `[]`) bypass the type-check, reaching pydantic-core and producing confusing `SchemaError`s instead of the intended `TypeError`.\n- **Minimal, focused change.** Only two lines in production code are modified — both truthiness guards replaced with explicit `is not None` checks. This is exactly the right fix.\n- **Good test expansion.** Parameterizing `test_alias_generator_with_invalid_callables` with `[1, 0, False, []]` covers both the previously-tested truthy case and the newly-fixed falsy cases. This ensures the fix is correct and prevents regressions.\n\n### Subtle Behavioral Improvement Worth Noting\n\nThe old code had a **second hidden bug**: if an alias generator returned `\"\"` (empty string), it was silently treated as \"no alias\" because `if alias` evaluated to `False` for `\"\"`. The new `is not None` check now correctly distinguishes between `None` (alias intentionally unset) and `\"\"` (a valid `str` alias, even if empty). This is a subtle but meaningful correctness improvement beyond just catching falsy invalid types.\n\n### Potential Concerns\n\n1. **The test closure issue.** The parametrized test uses `lambda x: return_value` — `return_value` is captured from the closure's scope (the parametrize fixture), not as a default argument. This works correctly here because `pytest.mark.parametrize` creates a new scope for each parameter, but it's a pattern that can bite. Not blocking, just something to be aware of.\n\n2. **`None` return semantics.** The PR preserves the existing behavior where returning `None` from an alias generator means \"no alias\". This is reasonable and documented, but it might be worth adding a brief docstring note that `None` is the only \"skip alias\" sentinel — `\"\"` is now treated as a real alias. Again, not blocking.\n\n### Summary\n\nThe PR is well-written, correctly fixes a real bug (both the reported falsy-type bypass and the implicit `\"\"`-dropping), includes appropriate tests, and keeps the diff minimal. I'd be happy to see this merged. LGTM 👍\n",
+          "submitted_at": "2026-06-01T02:26:54Z",
+          "commit_id": "f25ad90b39e1c1bcb7f57ff3445d348fefb7796c"
+        },
+        {
+          "id": 4399060105,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-01T07:07:49Z",
+          "commit_id": "f25ad90b39e1c1bcb7f57ff3445d348fefb7796c"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4590309957,
+          "user": "Viicos",
+          "body": "Thanks",
+          "created_at": "2026-06-01T07:07:57Z"
+        }
+      ]
+    },
+    {
+      "number": 13247,
+      "title": "Clarify `default` parameter behavior in `Field()`",
+      "author": "RoySerbi",
+      "state": "closed",
+      "created_at": "2026-05-30T20:49:49Z",
+      "merged_at": null,
+      "reviews": [
+        {
+          "id": 4398978560,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-01T06:51:32Z",
+          "commit_id": "6338a9c25bba6cd6a8423edc5431a418b068030c"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4590217600,
+          "user": "Viicos",
+          "body": "Actually, I don't think this is necessary, and would be confusing as you can still provide a default factory.",
+          "created_at": "2026-06-01T06:52:23Z"
+        }
+      ]
+    },
+    {
+      "number": 13246,
+      "title": "Fix Enum._missing_ receiving None for JSON inputs",
+      "author": "nvspavankalyanch",
+      "state": "closed",
+      "created_at": "2026-05-30T03:29:16Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13244,
+      "title": "feat: add SignedByteSize type to support negative byte values",
+      "author": "NandithReddy",
+      "state": "closed",
+      "created_at": "2026-05-29T19:47:27Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4579470799,
+          "user": "NandithReddy",
+          "body": "The CodSpeed regression on test_field_function_validator appears to be environmental noise — CodSpeed itself flagged 'Different runtime environments detected'. SignedByteSize is a new subclass with no changes to existing code paths, so it cannot affect field function validator performance. Happy to rerun if needed.",
+          "created_at": "2026-05-29T20:10:32Z"
+        }
+      ]
+    },
+    {
+      "number": 13243,
+      "title": "Populate `__slots__` from generic class during parameterization",
+      "author": "Viicos",
+      "state": "closed",
+      "created_at": "2026-05-29T15:23:31Z",
+      "merged_at": "2026-05-29T16:53:35Z",
+      "reviews": [
+        {
+          "id": 4391031676,
+          "user": "davidhewitt",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-05-29T15:59:50Z",
+          "commit_id": "b40042b32c0a63006b891c060b286c71985c2dd4"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13241,
+      "title": "Add Slack link to docs",
+      "author": "Viicos",
+      "state": "closed",
+      "created_at": "2026-05-29T11:57:04Z",
+      "merged_at": "2026-06-10T07:18:13Z",
+      "reviews": [
+        {
+          "id": 4431159993,
+          "user": "davidhewitt",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-04T20:21:19Z",
+          "commit_id": "91c7e04dade1f5f46ccc29f6742352b427bc3edb"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13239,
+      "title": "Fix docstring typo",
+      "author": "kratos0718",
+      "state": "closed",
+      "created_at": "2026-05-29T04:58:58Z",
+      "merged_at": "2026-06-01T07:26:34Z",
+      "reviews": [
+        {
+          "id": 4399078860,
+          "user": "Viicos",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2026-06-01T07:11:16Z",
+          "commit_id": "f4b78fe1a9d866857d149014fcd9cbed3e2b7286"
+        },
+        {
+          "id": 4399080903,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-01T07:11:38Z",
+          "commit_id": "b8ac8e42509166ded994ebaccffc0a465a63721b"
+        }
+      ],
+      "review_comments": [
+        {
+          "id": 3332243009,
+          "user": "Viicos",
+          "body": "V1 fixes are expected to be submitted to the [`1.10.X-fixes`](https://github.com/pydantic/pydantic/tree/1.10.X-fixes) branch.\n\n```suggestion\n        in the format `<name>=(<type>, <default default>)` or `<name>=<default value>, e.g.\n```",
+          "path": "pydantic/v1/main.py",
+          "line": null,
+          "diff_hunk": "@@ -991,7 +991,7 @@ def create_model(\n     :param __cls_kwargs__: a dict for class creation\n     :param __slots__: Deprecated, `__slots__` should not be passed to `create_model`\n     :param field_definitions: fields of the model (or extra fields if a base is supplied)\n-        in the format `<name>=(<type>, <default default>)` or `<name>=<default value>, e.g.\n+        in the format `<name>=(<type>, <default>)` or `<name>=<default value>, e.g.",
+          "in_reply_to_id": null,
+          "created_at": "2026-06-01T07:11:16Z"
+        }
+      ],
+      "issue_comments": []
+    },
+    {
+      "number": 13238,
+      "title": "fix: propagate `__slots__` from origin to generic parameterizations",
+      "author": "me-saurabhkohli",
+      "state": "closed",
+      "created_at": "2026-05-29T04:40:51Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13237,
+      "title": "Fix UrlConstraints being bypassed when passing an existing URL instance",
+      "author": "ghost",
+      "state": "closed",
+      "created_at": "2026-05-28T18:57:19Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13235,
+      "title": "docs: replace pyupgrade with Ruff in docs code upgrade hook",
+      "author": "ori98",
+      "state": "closed",
+      "created_at": "2026-05-28T04:38:41Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4590580172,
+          "user": "Viicos",
+          "body": "The [new docs](https://pydantic.dev/docs/validation/latest/get-started/) dropped the upgrade blocks for now, so this is no longer necessary.",
+          "created_at": "2026-06-01T07:51:53Z"
+        }
+      ]
+    },
+    {
+      "number": 13233,
+      "title": "fix: propagate __slots__ to generic parameterizations (#13215)",
+      "author": "mjsirfan2015",
+      "state": "closed",
+      "created_at": "2026-05-27T07:56:21Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13231,
+      "title": "fix: sort union members so subclasses are tried first during serialization",
+      "author": "GayathriSrividya",
+      "state": "closed",
+      "created_at": "2026-05-26T13:28:21Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13230,
+      "title": "Support AliasPath root list indices",
+      "author": "ManuDiasCruz",
+      "state": "closed",
+      "created_at": "2026-05-25T20:55:35Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13229,
+      "title": "Update documentation links",
+      "author": "Viicos",
+      "state": "closed",
+      "created_at": "2026-05-25T07:10:43Z",
+      "merged_at": "2026-05-28T07:46:25Z",
+      "reviews": [
+        {
+          "id": 4378796383,
+          "user": "davidhewitt",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-05-28T07:27:37Z",
+          "commit_id": "8bf0e29550b0b93eb9e3bf6d59b56c8bb866d68f"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13227,
+      "title": "Fix Coverage badge link target on docs landing page",
+      "author": "Christian-Katzmann",
+      "state": "closed",
+      "created_at": "2026-05-22T23:46:00Z",
+      "merged_at": "2026-05-25T06:48:59Z",
+      "reviews": [
+        {
+          "id": 4354726113,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "thanks!",
+          "submitted_at": "2026-05-25T06:48:52Z",
+          "commit_id": "f5814da8fb2e75ce6561b62dab0277388dc4f9b3"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4523390288,
+          "user": "Christian-Katzmann",
+          "body": "please review",
+          "created_at": "2026-05-22T23:46:22Z"
+        }
+      ]
+    },
+    {
+      "number": 13226,
+      "title": "Fix V1.10 Documentation link in README",
+      "author": "Christian-Katzmann",
+      "state": "closed",
+      "created_at": "2026-05-22T23:36:54Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4523366452,
+          "user": "Christian-Katzmann",
+          "body": "please review",
+          "created_at": "2026-05-22T23:38:25Z"
+        },
+        {
+          "id": 4532295830,
+          "user": "Viicos",
+          "body": "Thanks, but there are multiple places where this needs to be updated. I fixed them all in https://github.com/pydantic/pydantic/pull/13229.",
+          "created_at": "2026-05-25T07:10:51Z"
+        }
+      ]
+    },
+    {
+      "number": 13225,
+      "title": "Add AI policy, update contributing guidelines",
+      "author": "Viicos",
+      "state": "closed",
+      "created_at": "2026-05-22T11:18:20Z",
+      "merged_at": "2026-06-04T10:51:18Z",
+      "reviews": [
+        {
+          "id": 4344950704,
+          "user": "Viicos",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2026-05-22T11:18:57Z",
+          "commit_id": "dc74501a2080f7aaa7a74dc6608813387c0779d6"
+        },
+        {
+          "id": 4427003428,
+          "user": "Viicos",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2026-06-04T10:27:30Z",
+          "commit_id": "dc74501a2080f7aaa7a74dc6608813387c0779d6"
+        },
+        {
+          "id": 4427064685,
+          "user": "Viicos",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2026-06-04T10:37:26Z",
+          "commit_id": "01df3d0711bf409e78a2ae915161a3818790c737"
+        },
+        {
+          "id": 4427094207,
+          "user": "hramezani",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-04T10:42:24Z",
+          "commit_id": "364b848863cd160b40f1d103b906b11b79f9517e"
+        }
+      ],
+      "review_comments": [
+        {
+          "id": 3287965400,
+          "user": "Viicos",
+          "body": "I'm usually annoyed when I can't easily find contributing guidelines on other repos, so I'm adding this symlink ",
+          "path": "CONTRIBUTING.md",
+          "line": 1,
+          "diff_hunk": "",
+          "in_reply_to_id": null,
+          "created_at": "2026-05-22T11:18:58Z"
+        },
+        {
+          "id": 3355290067,
+          "user": "Viicos",
+          "body": "```suggestion\n* the pull request description is AI generated *and* incoherent or nonsensical.\n```",
+          "path": "docs/contributing.md",
+          "line": null,
+          "diff_hunk": "@@ -46,12 +42,21 @@ Because of this, setting up and running the tests should be very simple.\n     **tl;dr**: use `make format` to fix formatting, `make` to run tests and linting and `make docs`\n     to build the docs.\n \n+## AI policy\n+\n+We welcome the use of AI when contributing to Pydantic. However, users should certify that they fully understand the code being submitted.\n+We reserve the right to close any pull request at our discretion, without further justification. This includes, but is not limited to, cases where:\n+\n+* the contribution does not meet our quality standards,\n+* the author appears to be mass-submitting pull requests across multiple repositories (spam),\n+* the pull request description is AI generated _and_ incoherent or nonsensical.",
+          "in_reply_to_id": null,
+          "created_at": "2026-06-04T10:27:30Z"
+        },
+        {
+          "id": 3355342012,
+          "user": "Viicos",
+          "body": "```suggestion\n\nSuch behavior can also result in a permanent ban from the organization.\n\n```",
+          "path": "docs/contributing.md",
+          "line": 53,
+          "diff_hunk": "@@ -46,12 +42,21 @@ Because of this, setting up and running the tests should be very simple.\n     **tl;dr**: use `make format` to fix formatting, `make` to run tests and linting and `make docs`\n     to build the docs.\n \n+## AI policy\n+\n+We welcome the use of AI when contributing to Pydantic. However, users should certify that they fully understand the code being submitted.\n+We reserve the right to close any pull request at our discretion, without further justification. This includes, but is not limited to, cases where:\n+\n+* the contribution does not meet our quality standards,\n+* the author appears to be mass-submitting pull requests across multiple repositories (spam),\n+* the pull request description is AI generated *and* incoherent or nonsensical.\n+",
+          "in_reply_to_id": null,
+          "created_at": "2026-06-04T10:37:26Z"
+        }
+      ],
+      "issue_comments": []
+    },
+    {
+      "number": 13224,
+      "title": "Prepare release v2.14.0a1",
+      "author": "Viicos",
+      "state": "closed",
+      "created_at": "2026-05-22T10:59:33Z",
+      "merged_at": "2026-05-22T11:27:32Z",
+      "reviews": [
+        {
+          "id": 4345005381,
+          "user": "Kludex",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-05-22T11:26:17Z",
+          "commit_id": "723be21dc0f2154f51a016fb8b2108175794dd76"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13223,
+      "title": "fix: skip deepcopy of fields replaced by update in model_copy",
+      "author": "vitoriall",
+      "state": "closed",
+      "created_at": "2026-05-22T01:33:03Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13222,
+      "title": "Pass through external JSON schema `$ref` values verbatim",
+      "author": "ATOM00blue",
+      "state": "closed",
+      "created_at": "2026-05-22T00:55:21Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4514005935,
+          "user": "ATOM00blue",
+          "body": "please review",
+          "created_at": "2026-05-22T00:55:29Z"
+        }
+      ]
+    },
+    {
+      "number": 13220,
+      "title": "ci: use maturin `--pgo` option",
+      "author": "davidhewitt",
+      "state": "open",
+      "created_at": "2026-05-21T06:13:33Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13218,
+      "title": "Preserve slots on generic models",
+      "author": "puneetdixit200",
+      "state": "closed",
+      "created_at": "2026-05-21T04:45:18Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4504889547,
+          "user": "puneetdixit200",
+          "body": "please review",
+          "created_at": "2026-05-21T04:45:19Z"
+        }
+      ]
+    },
+    {
+      "number": 13217,
+      "title": "Add `use_enum_names` config to validate/serialize enums by name",
+      "author": "patelchaitany",
+      "state": "closed",
+      "created_at": "2026-05-20T15:22:34Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13216,
+      "title": "Extend mypy plugin to support fields supplied when calling `create_model()`",
+      "author": "Robert-Forrest",
+      "state": "closed",
+      "created_at": "2026-05-20T14:09:51Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13213,
+      "title": "fix: allow periods in unquoted NameEmail display names",
+      "author": "pintaste",
+      "state": "closed",
+      "created_at": "2026-05-19T22:09:30Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13212,
+      "title": "Bump pymdown-extensions from 10.16.1 to 10.21.3",
+      "author": "dependabot[bot]",
+      "state": "closed",
+      "created_at": "2026-05-19T21:16:50Z",
+      "merged_at": "2026-05-19T21:30:10Z",
+      "reviews": [
+        {
+          "id": 4323279016,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-05-19T21:18:32Z",
+          "commit_id": "491e16bdba252b1d3e6a14749fc227817b202ac7"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13211,
+      "title": "Add workflow to close spam PRs",
+      "author": "Viicos",
+      "state": "closed",
+      "created_at": "2026-05-19T20:51:04Z",
+      "merged_at": "2026-05-20T11:29:06Z",
+      "reviews": [
+        {
+          "id": 4326004081,
+          "user": "jirikuncar",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-05-20T07:12:20Z",
+          "commit_id": "8668d4c45757a19ea3f910e00b31f75ff9982917"
+        },
+        {
+          "id": 4326688805,
+          "user": "davidhewitt",
+          "state": "APPROVED",
+          "body": "Generally LGTM, one possible action to take before merge.",
+          "submitted_at": "2026-05-20T08:43:39Z",
+          "commit_id": "8668d4c45757a19ea3f910e00b31f75ff9982917"
+        },
+        {
+          "id": 4327092647,
+          "user": "Viicos",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2026-05-20T09:31:41Z",
+          "commit_id": "8668d4c45757a19ea3f910e00b31f75ff9982917"
+        }
+      ],
+      "review_comments": [
+        {
+          "id": 3272453257,
+          "user": "davidhewitt",
+          "body": "Should we require a closing issue for all external contributors?",
+          "path": ".github/workflows/enforce-issue-assignment.yml",
+          "line": 49,
+          "diff_hunk": "@@ -0,0 +1,77 @@\n+name: Enforce issue assignment\n+\n+on:\n+  # zizmor: ignore[dangerous-triggers] -- pull_request_target is needed to close PRs\n+  pull_request_target:\n+    types: [opened, edited, reopened]\n+\n+permissions:\n+  pull-requests: write\n+  issues: read\n+\n+jobs:\n+  check-assignment:\n+    if: >\n+      github.event.pull_request.author_association != 'MEMBER' &&\n+      github.event.pull_request.author_association != 'OWNER' &&\n+      github.event.pull_request.author_association != 'COLLABORATOR'\n+    runs-on: ubuntu-latest\n+    steps:\n+      - name: Check referenced issues and close if unauthorized\n+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0\n+        with:\n+          script: |\n+            const pr = context.payload.pull_request;\n+            const author = pr.user.login;\n+\n+            const query = `\n+              query($owner: String!, $repo: String!, $number: Int!) {\n+                repository(owner: $owner, name: $repo) {\n+                  pullRequest(number: $number) {\n+                    closingIssuesReferences(first: 20) {\n+                      nodes {\n+                        number\n+                        assignees(first: 20) { nodes { login } }\n+                      }\n+                    }\n+                  }\n+                }\n+              }\n+            `;\n+            const result = await github.graphql(query, {\n+              owner: context.repo.owner,\n+              repo: context.repo.repo,\n+              number: pr.number,\n+            });\n+\n+            const refs = result.repository.pullRequest.closingIssuesReferences.nodes;\n+            if (refs.length === 0) {\n+              core.info('No closing issue references; nothing to enforce.');",
+          "in_reply_to_id": null,
+          "created_at": "2026-05-20T08:41:28Z"
+        },
+        {
+          "id": 3272772362,
+          "user": "Viicos",
+          "body": "The main goal was to autoclose spam PRs, which almost always reference an issue. If no issue is referenced, then there's a higher chance it is a drive-by PR e.g. to fix a typo, so it should be fine.",
+          "path": ".github/workflows/enforce-issue-assignment.yml",
+          "line": 49,
+          "diff_hunk": "@@ -0,0 +1,77 @@\n+name: Enforce issue assignment\n+\n+on:\n+  # zizmor: ignore[dangerous-triggers] -- pull_request_target is needed to close PRs\n+  pull_request_target:\n+    types: [opened, edited, reopened]\n+\n+permissions:\n+  pull-requests: write\n+  issues: read\n+\n+jobs:\n+  check-assignment:\n+    if: >\n+      github.event.pull_request.author_association != 'MEMBER' &&\n+      github.event.pull_request.author_association != 'OWNER' &&\n+      github.event.pull_request.author_association != 'COLLABORATOR'\n+    runs-on: ubuntu-latest\n+    steps:\n+      - name: Check referenced issues and close if unauthorized\n+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0\n+        with:\n+          script: |\n+            const pr = context.payload.pull_request;\n+            const author = pr.user.login;\n+\n+            const query = `\n+              query($owner: String!, $repo: String!, $number: Int!) {\n+                repository(owner: $owner, name: $repo) {\n+                  pullRequest(number: $number) {\n+                    closingIssuesReferences(first: 20) {\n+                      nodes {\n+                        number\n+                        assignees(first: 20) { nodes { login } }\n+                      }\n+                    }\n+                  }\n+                }\n+              }\n+            `;\n+            const result = await github.graphql(query, {\n+              owner: context.repo.owner,\n+              repo: context.repo.repo,\n+              number: pr.number,\n+            });\n+\n+            const refs = result.repository.pullRequest.closingIssuesReferences.nodes;\n+            if (refs.length === 0) {\n+              core.info('No closing issue references; nothing to enforce.');",
+          "in_reply_to_id": 3272453257,
+          "created_at": "2026-05-20T09:31:41Z"
+        }
+      ],
+      "issue_comments": []
+    },
+    {
+      "number": 13210,
+      "title": "Bump idna from 3.10 to 3.15",
+      "author": "dependabot[bot]",
+      "state": "closed",
+      "created_at": "2026-05-19T20:07:56Z",
+      "merged_at": "2026-05-19T20:22:22Z",
+      "reviews": [
+        {
+          "id": 4322827825,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-05-19T20:14:54Z",
+          "commit_id": "bff16e8a1215d1e3773b8a017de44834526b9d83"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13209,
+      "title": "fix: route private attributes to __pydantic_private__ and respect extra settings in model_copy",
+      "author": "paulxg12",
+      "state": "closed",
+      "created_at": "2026-05-19T18:54:57Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13206,
+      "title": "Allow periods in unquoted NameEmail display names",
+      "author": "SahilNambiar11",
+      "state": "open",
+      "created_at": "2026-05-18T20:31:12Z",
+      "merged_at": null,
+      "reviews": [
+        {
+          "id": 4313912628,
+          "user": "SahilNambiar11",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2026-05-18T21:05:40Z",
+          "commit_id": "a8099e37b52507b78dd023e3831e8954dcc814ec"
+        },
+        {
+          "id": 4313913975,
+          "user": "SahilNambiar11",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2026-05-18T21:05:50Z",
+          "commit_id": "a8099e37b52507b78dd023e3831e8954dcc814ec"
+        }
+      ],
+      "review_comments": [
+        {
+          "id": 3262142608,
+          "user": "SahilNambiar11",
+          "body": "Added explicit valid regression coverage for `first.last <first.last@example.com>` in the follow-up commit.\r\n",
+          "path": "tests/test_networks.py",
+          "line": 941,
+          "diff_hunk": "@@ -936,6 +936,7 @@ class Model(BaseModel):\n         ('葉士豪@臺網中心.tw', '葉士豪', '葉士豪@臺網中心.tw'),\n         ('\"first.last\" <first.last@example.com>', 'first.last', 'first.last@example.com'),\n         (\"Shaquille O'Neal <shaq@example.com>\", \"Shaquille O'Neal\", 'shaq@example.com'),\n+        ('Homer J. Simpson <homer@thesimpsons.com>', 'Homer J. Simpson', 'homer@thesimpsons.com'),\n     ],",
+          "in_reply_to_id": 3261930938,
+          "created_at": "2026-05-18T21:05:40Z"
+        },
+        {
+          "id": 3262143645,
+          "user": "SahilNambiar11",
+          "body": "Added a comment explaining why `.` is intentionally allowed in unquoted display names to avoid future regressions.\r\n",
+          "path": "pydantic/networks.py",
+          "line": 1298,
+          "diff_hunk": "@@ -1296,7 +1296,7 @@ def _validate(cls, input_value: NetworkType, /) -> IPvAnyNetworkType:\n \n \n def _build_pretty_email_regex() -> re.Pattern[str]:",
+          "in_reply_to_id": 3261930987,
+          "created_at": "2026-05-18T21:05:50Z"
+        }
+      ],
+      "issue_comments": []
+    },
+    {
+      "number": 13205,
+      "title": "Fix JSON schema pattern for Decimals to allow scientific notation",
+      "author": "amanv0007",
+      "state": "closed",
+      "created_at": "2026-05-18T14:58:29Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13204,
+      "title": "fix: enforce URL constraints on existing URL instances",
+      "author": "codspeed-hq[bot]",
+      "state": "closed",
+      "created_at": "2026-05-18T12:40:29Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13203,
+      "title": "fix: enforce URL constraints on existing URL instances",
+      "author": "Kaysie23",
+      "state": "open",
+      "created_at": "2026-05-18T12:06:21Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4477665057,
+          "user": "Kaysie23",
+          "body": "@codspeedbot fix this regression",
+          "created_at": "2026-05-18T12:29:30Z"
+        }
+      ]
+    },
+    {
+      "number": 13202,
+      "title": "fix: enforce UrlConstraints when an existing URL instance is passed",
+      "author": "zhoufengen",
+      "state": "closed",
+      "created_at": "2026-05-18T03:49:45Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13201,
+      "title": "Add support for string.templatelib.Template",
+      "author": "pranavmanglik",
+      "state": "closed",
+      "created_at": "2026-05-17T21:27:58Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13200,
+      "title": "Fix Decimal serialization schema to accept scientific notation",
+      "author": "Priyanshu-byte-coder",
+      "state": "closed",
+      "created_at": "2026-05-17T11:12:57Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13199,
+      "title": "Add PyEmscripten platform tag support",
+      "author": "Viicos",
+      "state": "closed",
+      "created_at": "2026-05-17T10:20:56Z",
+      "merged_at": "2026-05-22T11:21:08Z",
+      "reviews": [
+        {
+          "id": 4326829919,
+          "user": "davidhewitt",
+          "state": "COMMENTED",
+          "body": "Seems good, some initial questions",
+          "submitted_at": "2026-05-20T09:07:25Z",
+          "commit_id": "9d57f06e6f91863151b9dbc12e8347e81bd48582"
+        },
+        {
+          "id": 4326931541,
+          "user": "Viicos",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2026-05-20T09:12:39Z",
+          "commit_id": "9d57f06e6f91863151b9dbc12e8347e81bd48582"
+        },
+        {
+          "id": 4326933376,
+          "user": "Viicos",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2026-05-20T09:12:54Z",
+          "commit_id": "9d57f06e6f91863151b9dbc12e8347e81bd48582"
+        },
+        {
+          "id": 4327009340,
+          "user": "Viicos",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2026-05-20T09:22:29Z",
+          "commit_id": "9d57f06e6f91863151b9dbc12e8347e81bd48582"
+        },
+        {
+          "id": 4344796016,
+          "user": "davidhewitt",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-05-22T10:50:18Z",
+          "commit_id": "51899c8e46edae703da9ca8cc29309c53c8f442f"
+        }
+      ],
+      "review_comments": [
+        {
+          "id": 3272565306,
+          "user": "davidhewitt",
+          "body": "Just curious why we couldn't use uv to manage these dependencies?",
+          "path": ".github/pyodide/requirements.in",
+          "line": 1,
+          "diff_hunk": "",
+          "in_reply_to_id": null,
+          "created_at": "2026-05-20T08:59:10Z"
+        },
+        {
+          "id": 3272590264,
+          "user": "davidhewitt",
+          "body": "Need to install a rust toolchain still?",
+          "path": ".github/workflows/ci.yml",
+          "line": 248,
+          "diff_hunk": "@@ -237,64 +237,62 @@ jobs:\n           name: pydantic_core_pypi_files_${{ matrix.platform.os }}_${{ matrix.interpreter }}\n           path: pydantic-core/dist\n \n-  core-build-wasm-emscripten:\n-    name: core / Build WASM Emscripten\n+  core-build-pyemscripten:\n+    name: core / Build PyEmscripten (${{ matrix.python-version }})\n     runs-on: ubuntu-latest\n+    strategy:\n+      fail-fast: false\n+      matrix:\n+        include:\n+          # Our MSRV is currently 1.88.\n+          # We can't build for 3.12 as Rust 1.88 is incompatible with the emsdk version (https://github.com/PyO3/maturin/issues/2549).\n+          # For 3.13, pyodide recommends nightly-2025-02-01 (1.86.0), which is below our MSRV — trying to use newer nightly releases\n+          # fails when building.\n+          - python-version: '3.14'\n     steps:\n       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2\n         with:\n           persist-credentials: false\n \n-      - name: Install rust nightly",
+          "in_reply_to_id": null,
+          "created_at": "2026-05-20T09:03:01Z"
+        },
+        {
+          "id": 3272603043,
+          "user": "davidhewitt",
+          "body": "I wonder, what would it take to make that work?",
+          "path": "pydantic-core/tests/test_docstrings.py",
+          "line": 10,
+          "diff_hunk": "@@ -3,13 +3,13 @@\n \n import pytest\n \n-try:\n+if sys.platform != 'emscripten':\n     from pytest_examples import CodeExample, EvalExample, find_examples\n-except ImportError:\n+else:\n     # pytest_examples is not installed on emscripten\n     CodeExample = EvalExample = None",
+          "in_reply_to_id": null,
+          "created_at": "2026-05-20T09:04:56Z"
+        },
+        {
+          "id": 3272650661,
+          "user": "Viicos",
+          "body": "It depends on ruff, which has no wheels for the platform.",
+          "path": "pydantic-core/tests/test_docstrings.py",
+          "line": 10,
+          "diff_hunk": "@@ -3,13 +3,13 @@\n \n import pytest\n \n-try:\n+if sys.platform != 'emscripten':\n     from pytest_examples import CodeExample, EvalExample, find_examples\n-except ImportError:\n+else:\n     # pytest_examples is not installed on emscripten\n     CodeExample = EvalExample = None",
+          "in_reply_to_id": 3272603043,
+          "created_at": "2026-05-20T09:12:39Z"
+        },
+        {
+          "id": 3272652209,
+          "user": "Viicos",
+          "body": "It is already installed in the docker image from the maturin action.",
+          "path": ".github/workflows/ci.yml",
+          "line": 248,
+          "diff_hunk": "@@ -237,64 +237,62 @@ jobs:\n           name: pydantic_core_pypi_files_${{ matrix.platform.os }}_${{ matrix.interpreter }}\n           path: pydantic-core/dist\n \n-  core-build-wasm-emscripten:\n-    name: core / Build WASM Emscripten\n+  core-build-pyemscripten:\n+    name: core / Build PyEmscripten (${{ matrix.python-version }})\n     runs-on: ubuntu-latest\n+    strategy:\n+      fail-fast: false\n+      matrix:\n+        include:\n+          # Our MSRV is currently 1.88.\n+          # We can't build for 3.12 as Rust 1.88 is incompatible with the emsdk version (https://github.com/PyO3/maturin/issues/2549).\n+          # For 3.13, pyodide recommends nightly-2025-02-01 (1.86.0), which is below our MSRV — trying to use newer nightly releases\n+          # fails when building.\n+          - python-version: '3.14'\n     steps:\n       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2\n         with:\n           persist-credentials: false\n \n-      - name: Install rust nightly",
+          "in_reply_to_id": 3272590264,
+          "created_at": "2026-05-20T09:12:53Z"
+        },
+        {
+          "id": 3272710713,
+          "user": "Viicos",
+          "body": "See https://vp-post-emscripten-wheels.pydantic-dev-site.pages.dev/articles/emscripten-wheels-pydantic#testing-the-wheel, uv doesn't support pyodide properly.",
+          "path": ".github/pyodide/requirements.in",
+          "line": 1,
+          "diff_hunk": "",
+          "in_reply_to_id": 3272565306,
+          "created_at": "2026-05-20T09:22:29Z"
+        }
+      ],
+      "issue_comments": []
+    },
+    {
+      "number": 13198,
+      "title": "chore: improve pydantic maintenance path",
+      "author": "lphuc2250gma",
+      "state": "closed",
+      "created_at": "2026-05-16T18:05:31Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13197,
+      "title": "fix: preserve string constraints in JSON schema for Optional[Annotated[str, Validator]] fields",
+      "author": "nileshpatil6",
+      "state": "closed",
+      "created_at": "2026-05-16T15:03:57Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13196,
+      "title": "Avoid using explicit `Any` in the Mypy plugin",
+      "author": "Viicos",
+      "state": "closed",
+      "created_at": "2026-05-16T12:01:48Z",
+      "merged_at": "2026-06-01T08:07:16Z",
+      "reviews": [
+        {
+          "id": 4327019402,
+          "user": "davidhewitt",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-05-20T09:23:34Z",
+          "commit_id": "751e47acf111e7f19a244c2ec2c887902db2a7c6"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13194,
+      "title": "Skip flaky PyPy test",
+      "author": "Viicos",
+      "state": "closed",
+      "created_at": "2026-05-16T08:58:30Z",
+      "merged_at": "2026-05-16T10:17:20Z",
+      "reviews": [
+        {
+          "id": 4303523132,
+          "user": "jirikuncar",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-05-16T10:13:22Z",
+          "commit_id": "efb131f31e6b485150929565adce65d5e7d0bccc"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13193,
+      "title": "Add agent skills",
+      "author": "Viicos",
+      "state": "open",
+      "created_at": "2026-05-16T08:40:01Z",
+      "merged_at": null,
+      "reviews": [
+        {
+          "id": 4327088855,
+          "user": "davidhewitt",
+          "state": "APPROVED",
+          "body": "Generally looks good, one comment though.",
+          "submitted_at": "2026-05-20T09:31:46Z",
+          "commit_id": "b74e40b795111752aeb5ba7825f5d1a46fa3c8fa"
+        }
+      ],
+      "review_comments": [
+        {
+          "id": 3272769749,
+          "user": "davidhewitt",
+          "body": "Is this definitely true? We can also perform normalisation within validation, e.g. `datetime` -> `date` (and ensure time component is empty), which a type checker would allow.",
+          "path": ".agents/skills/pydantic/SKILL.md",
+          "line": 14,
+          "diff_hunk": "@@ -0,0 +1,268 @@\n+---\n+name: pydantic\n+description: Pydantic is a Python data validation and serialization library, based on type hints. Use this skill whenever you need to do relatively complex data modeling using Pydantic, e.g. when adding constraints, defining a model hierarchy with subclasses, etc.\n+---\n+\n+# Pydantic Validation\n+\n+In a nutshell, Pydantic is dataclasses with runtime validation. It leverages type hints\n+to understand how validation (and serialization) should be performed. It is mostly useful\n+when dealing with external untrusted data, for example when defining an HTTP API.\n+\n+You shouldn't use Pydantic to define classes that are instantiated within the user code.\n+It is usually better to use vanilla classes (or standard library dataclasses) in this case,\n+as a static type checker will already catch type mismatches.",
+          "in_reply_to_id": null,
+          "created_at": "2026-05-20T09:31:15Z"
+        }
+      ],
+      "issue_comments": []
+    },
+    {
+      "number": 13191,
+      "title": "feat: add SKILL.md for LLM code generation best practices",
+      "author": "tanmaypandey7",
+      "state": "closed",
+      "created_at": "2026-05-15T18:30:25Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4466378115,
+          "user": "Viicos",
+          "body": "Closing as per https://github.com/pydantic/pydantic/issues/13189#issuecomment-4466377723.",
+          "created_at": "2026-05-16T08:48:41Z"
+        }
+      ]
+    },
+    {
+      "number": 13190,
+      "title": "feat: add SKILL.md for LLM code generation best practices",
+      "author": "tanmaypandey7",
+      "state": "closed",
+      "created_at": "2026-05-15T18:17:48Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13187,
+      "title": "Use `email_error` type for `EmailStr` validation failures",
+      "author": "tomy-da-rocha",
+      "state": "closed",
+      "created_at": "2026-05-15T11:35:52Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4459610019,
+          "user": "tomy-da-rocha",
+          "body": "please review\r\n\r\nstill tagged `v3 (under consideration)`, so I'm opening as draft. If you'd rather sit on this until v3 work kicks off properly, totally fine, just say the word and I'll keep the branch alive.\r\n\r\nTell me if you'd prefer a non-breaking version\r\n\r\nCI failures seems unrelated to the diffs I did.\r\n\r\nThanks for taking a look 🙏",
+          "created_at": "2026-05-15T12:08:14Z"
+        },
+        {
+          "id": 4459993801,
+          "user": "Viicos",
+          "body": "Thanks, but v3 isn't actively worked on, so closing for now.",
+          "created_at": "2026-05-15T13:04:57Z"
+        }
+      ]
+    },
+    {
+      "number": 13186,
+      "title": "Build PEP 783 pyemscripten_2026_0_wasm32 pydantic-core wheels",
+      "author": "sinaatalay",
+      "state": "closed",
+      "created_at": "2026-05-14T16:47:31Z",
+      "merged_at": null,
+      "reviews": [
+        {
+          "id": 4297556338,
+          "user": "agriyakhetarpal",
+          "state": "COMMENTED",
+          "body": "Hi! A quick note for now: we'd recommend waiting for the Pyodide 314.0.0 stable release to publish the 2026 ABI wheels to PyPI (I know that's not what this PR does, but I thought it'd be useful to mention!). The stable release will be coming soon ([PR](https://github.com/pyodide/pyodide/issues/6233), [milestone](https://github.com/pyodide/pyodide/milestone/37)).\n\nHowever, if y'all may want to publish the 2025 ABI wheels to PyPI already, you can do that with Pyodide 0.29.4, for which pyodide-build has started emitting the right platform tag (`pyemscripten` instead of `pyodide`) for acceptance on PyPI. For reference: https://pypi.org/project/dummy-pyodide-ext-test.",
+          "submitted_at": "2026-05-15T11:06:55Z",
+          "commit_id": "559621ad93468a43d7487a9587f9a2266b04618e"
+        }
+      ],
+      "review_comments": [
+        {
+          "id": 3247702385,
+          "user": "agriyakhetarpal",
+          "body": "```suggestion\n    env:\n      PYODIDE_VERSION: '314.0.0a2'\n```\n\nWe released the second alpha with a few fixes a couple of days ago: https://github.com/pyodide/pyodide/releases/tag/314.0.0a2",
+          "path": ".github/workflows/ci.yml",
+          "line": null,
+          "diff_hunk": "@@ -240,39 +240,32 @@ jobs:\n   core-build-wasm-emscripten:\n     name: core / Build WASM Emscripten\n     runs-on: ubuntu-latest\n+    env:\n+      PYODIDE_VERSION: '314.0.0a1'",
+          "in_reply_to_id": null,
+          "created_at": "2026-05-15T11:00:35Z"
+        },
+        {
+          "id": 3247703824,
+          "user": "agriyakhetarpal",
+          "body": "```suggestion\n    \"pyodide\": \"314.0.0-alpha.2\"\n```",
+          "path": "pydantic-core/package.json",
+          "line": null,
+          "diff_hunk": "@@ -8,7 +8,7 @@\n   \"main\": \"tests/emscripten_runner.js\",\n   \"dependencies\": {\n     \"prettier\": \"^2.7.1\",\n-    \"pyodide\": \"^0.28.3\"\n+    \"pyodide\": \"314.0.0-alpha.1\"",
+          "in_reply_to_id": null,
+          "created_at": "2026-05-15T11:00:46Z"
+        }
+      ],
+      "issue_comments": [
+        {
+          "id": 4459307314,
+          "user": "sinaatalay",
+          "body": "Thank you. I updated to the second Pyodide 314 alpha.\r\n\r\nI understand there are three possible paths here:\r\n\r\n- publish 2026 ABI wheels with the latest Pyodide 314 alpha (`314.0.0a2`),\r\n- publish 2025 ABI wheels with Pyodide 0.29.4,\r\n- wait for the stable Pyodide 314 release before publishing 2026 ABI wheels.\r\n\r\nI bumped this PR to `314.0.0a2` so it stays ready if maintainers want to take the first path. If pydantic maintainers prefer either of the other paths, I am happy to adjust the PR accordingly.",
+          "created_at": "2026-05-15T11:20:55Z"
+        },
+        {
+          "id": 4460469906,
+          "user": "Viicos",
+          "body": "Hi @sinaatalay @agriyakhetarpal,\r\n\r\nthanks for looking into this. I'm planning on integrating this and publishing an alpha release today/this weekend. I'm also writing a blog post on our website to raise awareness about Emscripten support from PEP 783.\r\n\r\nI have a couple questions from reading the PEP:\r\n\r\n- [This section](https://peps.python.org/pep-0783/#the-pyemscripten-platform) says:\r\n\r\n  > The platform definition does not include anything about Python and in particular it is agnostic to the Python version it is intended to be used with.\r\n\r\nHowever, I read on the [pyodide docs](https://pyodide.org/en/stable/development/abi.html#platform-versions) that a specific platform definition matches a specific Python version. Am I missing something?\r\n\r\n> However, if y'all may want to publish the 2025 ABI wheels to PyPI already\r\n\r\nSeems like we can also do it for https://pyodide.org/en/latest/development/abi/312.html? ~~(assuming these docs are outdated as mentioning the `pyodide` platform tag instead of `pyemscripten`)~~.\r\n\r\nSo if we had a full wheel suite, it would look like:\r\n\r\n- `pydantic-core-x.y.z-cp314-cp314-pyemscripten_2026_0_wasm32.whl`\r\n- `pydantic-core-x.y.z-cp313-cp313-pyemscripten_2025_0_wasm32.whl`\r\n- `pydantic-core-x.y.z-cp312-cp312-pyemscripten_2024_0_wasm32.whl`\r\n\r\n?",
+          "created_at": "2026-05-15T14:09:11Z"
+        },
+        {
+          "id": 4470646149,
+          "user": "sinaatalay",
+          "body": "PEP 783 says that the `pyemscripten_*_wasm32` platform definition is not conceptually about Python, which looks true.\r\n\r\nBut Pyodide doesn't support arbitrary combinations of CPython ABI and `pyemscripten_*` platform.\r\n\r\n| Pyodide Version | CPython Version | PEP 783 Support | Status |\r\n| --- | --- | --- | --- |\r\n| 0.22.1 | 3.10 | `pyemscripten_*` not supported | ❌ |\r\n| 0.25.1 | 3.11 | `pyemscripten_*` not supported | ❌ |\r\n| 0.27.7 | 3.12 | `pyemscripten_*` not supported | ❌ |\r\n| 0.29.4 | 3.13 | `pyemscripten_2025_0_wasm32` | ✅ works |\r\n| 314.0.0-alpha.2 | 3.14 | `pyemscripten_2026_0_wasm32` | ✅ works |\r\n\r\nSo if we are targeting Pyodide with our pyemscripten wheels, the full wheel suite would be:\r\n\r\n- `pydantic_core-*-cp313-cp313-pyemscripten_2025_0_wasm32.whl`\r\n- `pydantic_core-*-cp314-cp314-pyemscripten_2026_0_wasm32.whl`\r\n",
+          "created_at": "2026-05-17T12:30:01Z"
+        },
+        {
+          "id": 4518209702,
+          "user": "Viicos",
+          "body": "Thanks, handled in https://github.com/pydantic/pydantic/pull/13199. I'm releasing 2.14.0a1 soon, so you can test out the wheel (https://github.com/pydantic/pydantic/pull/13186#pullrequestreview-4297556338 still applies, might be worth waiting for a final Pyodide release before using in production).",
+          "created_at": "2026-05-22T11:22:45Z"
+        }
+      ]
+    },
+    {
+      "number": 13181,
+      "title": "Fix typo in strict mode documentation",
+      "author": "rikhilrai",
+      "state": "closed",
+      "created_at": "2026-05-13T22:28:32Z",
+      "merged_at": "2026-05-16T10:31:40Z",
+      "reviews": [
+        {
+          "id": 4303527151,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-05-16T10:17:53Z",
+          "commit_id": "e06eb3fc931616dd008de5289a3ed8cec1dcd67b"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13180,
+      "title": "Reapply URL constraints to existing URL instances",
+      "author": "snoopuppy582",
+      "state": "closed",
+      "created_at": "2026-05-13T18:09:09Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4443964926,
+          "user": "snoopuppy582",
+          "body": "please review",
+          "created_at": "2026-05-13T18:09:16Z"
+        },
+        {
+          "id": 4444283888,
+          "user": "snoopuppy582",
+          "body": "I pushed a small follow-up to reduce the overhead from the URL constraint check on existing URL instances. The constraint presence check is now cached per generated validator instead of being recomputed for each URL value.\n\nRe-ran locally with the repository-required uv binary:\n\n- `uv run pytest tests/test_networks.py -q` -> 302 passed, 1 skipped, 1 xfailed\n- `uv run ruff check pydantic/networks.py tests/test_networks.py` -> passed\n- `uv run ruff format --check pydantic/networks.py tests/test_networks.py` -> passed",
+          "created_at": "2026-05-13T18:52:33Z"
+        },
+        {
+          "id": 4444696271,
+          "user": "snoopuppy582",
+          "body": "I pushed another follow-up for the CodSpeed regression.\n\nThe exact-source fast path now stays in place when the effective URL schema matches the class constraints, e.g. validating an `AnyHttpUrl` instance as `AnyHttpUrl`. Existing URL instances are still revalidated when extra external constraints are applied through `Annotated[..., UrlConstraints(...)]` / field metadata.\n\nLocal checks:\n\n- `uv run pytest tests/test_networks.py -q` -> 303 passed, 1 skipped, 1 xfailed\n- `uv run ruff check pydantic/networks.py tests/test_networks.py`\n- `uv run ruff format --check pydantic/networks.py tests/test_networks.py`",
+          "created_at": "2026-05-13T19:50:21Z"
+        },
+        {
+          "id": 4444800109,
+          "user": "snoopuppy582",
+          "body": "CI update: CodSpeed is now green on `efa86ef7`.\n\nThe remaining failing `core / Test on macos` job fails during `uv sync` while building `pydantic-core`, before the Python tests run:\n\n- `maturin.build_editable` calls `cargo metadata`\n- the runner reports `error: unexpected argument 'metadata' found` from `rustup-init`\n\nThat looks like a macOS/Rust toolchain setup issue rather than a failure in the URL validation changes. The aggregate `check` failure appears to be from that job.",
+          "created_at": "2026-05-13T20:04:29Z"
+        }
+      ]
+    },
+    {
+      "number": 13179,
+      "title": "Fix serializer config typo",
+      "author": "lphuc2250gma",
+      "state": "closed",
+      "created_at": "2026-05-13T15:52:18Z",
+      "merged_at": "2026-05-16T10:33:55Z",
+      "reviews": [
+        {
+          "id": 4283357183,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-05-13T16:04:48Z",
+          "commit_id": "0e81f82dfd0f3f83d7a49a0731731ea0d6d8c5af"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13178,
+      "title": "Fix duplicated word in wasm preview README",
+      "author": "lphuc2250gma",
+      "state": "closed",
+      "created_at": "2026-05-13T15:32:53Z",
+      "merged_at": "2026-05-13T15:44:16Z",
+      "reviews": [
+        {
+          "id": 4283148571,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-05-13T15:37:22Z",
+          "commit_id": "1994ea1b9137f77ad3b9da6381addc08785f9d14"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13177,
+      "title": "Mypy plugin workaround for dynamic models defined in functions",
+      "author": "ilevkivskyi",
+      "state": "closed",
+      "created_at": "2026-05-13T15:12:19Z",
+      "merged_at": "2026-05-16T10:17:05Z",
+      "reviews": [
+        {
+          "id": 4303513952,
+          "user": "Viicos",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2026-05-16T10:03:10Z",
+          "commit_id": "498a486a3401331736810f95d84de44246f9841d"
+        },
+        {
+          "id": 4303515289,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "Thanks @ilevkivskyi!",
+          "submitted_at": "2026-05-16T10:04:26Z",
+          "commit_id": "89bfa03d158b483b1412692697a4e9db9ffeefb0"
+        }
+      ],
+      "review_comments": [
+        {
+          "id": 3252645335,
+          "user": "Viicos",
+          "body": "```suggestion\n# This only crashes in parallel mode (see https://github.com/python/mypy/issues/21472):\ndef dyn_model() -> type[BaseModel]:\n```",
+          "path": "tests/mypy/modules/create_model_var.py",
+          "line": 16,
+          "diff_hunk": "@@ -10,3 +10,12 @@ class Model(BaseModel):\n \n class Main(BaseModel):\n     sub: SubModel\n+\n+\n+def dyn_model() -> type[BaseModel]:",
+          "in_reply_to_id": null,
+          "created_at": "2026-05-16T10:02:48Z"
+        },
+        {
+          "id": 3252645442,
+          "user": "Viicos",
+          "body": "```suggestion\n# This only crashes in parallel mode (see https://github.com/python/mypy/issues/21472):\ndef dyn_model() -> type[BaseModel]:\n```",
+          "path": "tests/mypy/outputs/mypy-plugin_ini/create_model_var.py",
+          "line": 16,
+          "diff_hunk": "@@ -10,3 +10,12 @@ class Model(BaseModel):\n \n class Main(BaseModel):\n     sub: SubModel\n+\n+\n+def dyn_model() -> type[BaseModel]:",
+          "in_reply_to_id": null,
+          "created_at": "2026-05-16T10:02:55Z"
+        }
+      ],
+      "issue_comments": [
+        {
+          "id": 4442973341,
+          "user": "ilevkivskyi",
+          "body": "OK, all looks good now, please review.",
+          "created_at": "2026-05-13T16:08:31Z"
+        }
+      ]
+    },
+    {
+      "number": 13176,
+      "title": "fix: re-validate UrlConstraints on existing AnyUrl instances",
+      "author": "algojogacor",
+      "state": "open",
+      "created_at": "2026-05-12T09:07:55Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4429621934,
+          "user": "algojogacor",
+          "body": "Fixed ruff format: reformatted `pydantic/networks.py`.",
+          "created_at": "2026-05-12T10:33:20Z"
+        }
+      ]
+    },
+    {
+      "number": 13175,
+      "title": "Fix/extra allow alias collision",
+      "author": "noy-solvin",
+      "state": "closed",
+      "created_at": "2026-05-12T06:55:09Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13172,
+      "title": "Bump urllib3 from 2.6.3 to 2.7.0",
+      "author": "dependabot[bot]",
+      "state": "closed",
+      "created_at": "2026-05-11T18:12:55Z",
+      "merged_at": "2026-05-11T18:37:45Z",
+      "reviews": [
+        {
+          "id": 4266376385,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-05-11T18:37:39Z",
+          "commit_id": "45d763a637c8b7c3ef5e22aa23f423e02882ddea"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13171,
+      "title": "Use standard library `LazyLock`",
+      "author": "Viicos",
+      "state": "closed",
+      "created_at": "2026-05-11T17:58:32Z",
+      "merged_at": "2026-06-04T20:21:56Z",
+      "reviews": [
+        {
+          "id": 4431163386,
+          "user": "davidhewitt",
+          "state": "APPROVED",
+          "body": "👍 ",
+          "submitted_at": "2026-06-04T20:21:51Z",
+          "commit_id": "86e9c8da24ff8daaf0d377770a4631533a708b7b"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13166,
+      "title": "Fix custom JSON schema refs to local defs",
+      "author": "nightcityblade",
+      "state": "closed",
+      "created_at": "2026-05-11T03:13:20Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4417285133,
+          "user": "nightcityblade",
+          "body": "please review",
+          "created_at": "2026-05-11T03:13:44Z"
+        }
+      ]
+    },
+    {
+      "number": 13165,
+      "title": "Clarify `polymorphic_serialization` configuration value",
+      "author": "Viicos",
+      "state": "closed",
+      "created_at": "2026-05-10T10:33:53Z",
+      "merged_at": "2026-05-11T14:13:57Z",
+      "reviews": [
+        {
+          "id": 4264386420,
+          "user": "davidhewitt",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-05-11T14:09:46Z",
+          "commit_id": "8c65e6771c2970a75c9327a65a839614a1e2cc91"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13163,
+      "title": "Avoid explicit `Any` on `**kwargs` synthesized for models with dynamic aliases",
+      "author": "truffle-dev",
+      "state": "closed",
+      "created_at": "2026-05-09T20:25:32Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4413596652,
+          "user": "truffle-dev",
+          "body": "please review",
+          "created_at": "2026-05-09T20:25:37Z"
+        }
+      ]
+    },
+    {
+      "number": 13162,
+      "title": "Accept scientific notation in Decimal JSON schema serialization pattern",
+      "author": "jbbqqf",
+      "state": "open",
+      "created_at": "2026-05-09T16:05:29Z",
+      "merged_at": null,
+      "reviews": [
+        {
+          "id": 4497792871,
+          "user": "LD-RW",
+          "state": "COMMENTED",
+          "body": "Took a look at the scientific-notation fix — confirmed it round-trips correctly (no valid `str(Decimal)` output gets rejected), so the core goal works. Left one inline question about the constraint semantics: once the exponent suffix is allowed, `max_digits`/`decimal_places` no longer bound the actual value for inputs carrying an exponent. Not a blocker — more a question about whether the emitted schema should still advertise those limits, or note the relaxation. The inline comment already flags that bounding sci-notation is intractable, which I agree with; this is just the narrower documentation/intent angle.",
+          "submitted_at": "2026-06-15T13:28:42Z",
+          "commit_id": "44f7d8f285f440c24788a62bc1c61c34e8719227"
+        }
+      ],
+      "review_comments": [
+        {
+          "id": 3413812317,
+          "user": "LD-RW",
+          "body": "question: once `exp_suffix` (L709) is appended, the emitted schema's `max_digits` / `decimal_places` constraints stop bounding the actual value for any input carrying an exponent. The coefficient is length-limited by the `[\\d.]{1,max_digits+1}` lookaheads (L725/L736), and trailing zeros get absorbed by the following `0*`, but the exponent `\\d+` is unbounded — so e.g. for `max_digits=8, decimal_places=4`, both `1.5E+10` (11 integer digits) and `1.5E-10` (effectively 11 decimal places) validate. The inline comment already notes that bounding scientific notation by digit counts is intractable, which I agree with; my question is narrower: should the schema still *advertise* `max_digits`/`decimal_places` when a subset of accepted inputs provably violate them, and is there a difference in intent between the validation-mode and serialization-mode schemas here? A short note in the schema description (or scoping the relaxation to serialization mode only) might prevent a consumer from assuming the emitted `pattern` enforces the digit limits it names.",
+          "path": "pydantic/json_schema.py",
+          "line": 709,
+          "diff_hunk": "@@ -697,9 +697,23 @@ def get_decimal_pattern(schema: core_schema.DecimalSchema) -> str:\n             max_digits = schema.get('max_digits')\n             decimal_places = schema.get('decimal_places')\n \n-            pattern = (\n-                r'^(?!^[-+.]*$)[+-]?0*'  # check it is not empty string and not one or sequence of \".+-\" characters.\n-            )\n+            # pydantic-core serializes `Decimal` via `str(d)`, which yields\n+            # scientific notation for values whose canonical exponent makes\n+            # fixed-point output verbose (e.g. `Decimal('0.0000001') -> '1E-7'`).\n+            # Allow an optional `[eE][+-]?\\d+` suffix so the schema accepts\n+            # everything `model_dump_json` itself can emit. Digit-count limits\n+            # are enforced on the coefficient form only; bounding scientific\n+            # notation by digit counts via regex is intractable, and rejecting\n+            # valid serializer output is the worse failure mode (it breaks\n+            # round-tripping the JSON through the schema). See issue #13089.\n+            exp_suffix = r'(?:[eE][+-]?\\d+)?'",
+          "in_reply_to_id": null,
+          "created_at": "2026-06-15T13:27:13Z"
+        }
+      ],
+      "issue_comments": [
+        {
+          "id": 4412947205,
+          "user": "jbbqqf",
+          "body": "please review\n\n(This PR was drafted with assistance from Claude Code as part of an automated triage-and-contribute run; the reviewer-facing reproducer block in the description is the exact one I used while developing the fix.)",
+          "created_at": "2026-05-09T16:05:36Z"
+        }
+      ]
+    },
+    {
+      "number": 13157,
+      "title": "Add support for pyemscripten/pyodide wheel builds",
+      "author": "greateggsgreg",
+      "state": "closed",
+      "created_at": "2026-05-05T23:50:24Z",
+      "merged_at": null,
+      "reviews": [
+        {
+          "id": 4264477442,
+          "user": "davidhewitt",
+          "state": "COMMENTED",
+          "body": "Thanks for working on this, a bunch of comments / questions.",
+          "submitted_at": "2026-05-11T14:29:54Z",
+          "commit_id": "719eaa4ed2f11f5cddcfee8a573a4016be51c318"
+        },
+        {
+          "id": 4277586865,
+          "user": "greateggsgreg",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2026-05-13T01:50:00Z",
+          "commit_id": "719eaa4ed2f11f5cddcfee8a573a4016be51c318"
+        },
+        {
+          "id": 4277617023,
+          "user": "greateggsgreg",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2026-05-13T01:54:49Z",
+          "commit_id": "719eaa4ed2f11f5cddcfee8a573a4016be51c318"
+        },
+        {
+          "id": 4277698467,
+          "user": "greateggsgreg",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2026-05-13T02:11:56Z",
+          "commit_id": "719eaa4ed2f11f5cddcfee8a573a4016be51c318"
+        },
+        {
+          "id": 4277748288,
+          "user": "greateggsgreg",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2026-05-13T02:25:37Z",
+          "commit_id": "719eaa4ed2f11f5cddcfee8a573a4016be51c318"
+        },
+        {
+          "id": 4281056847,
+          "user": "greateggsgreg",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2026-05-13T11:29:41Z",
+          "commit_id": "2303c04bf5933a14ea5a633d0d95b8f021b6acf8"
+        }
+      ],
+      "review_comments": [
+        {
+          "id": 3219631471,
+          "user": "davidhewitt",
+          "body": "This sounds wrong to me, `pytest-run-parallel` is pure python code?",
+          "path": "tests/conftest.py",
+          "line": null,
+          "diff_hunk": "@@ -198,6 +201,16 @@ def generate(*args: Any, **kwargs: Any) -> Any:\n # `pytest_collection_modifyitems` (which is the last collection hook to be run).\n def pytest_itemcollected(item: Item) -> None:\n     \"\"\"Mark tests as thread unsafe if they make use of fixtures that doesn't play well across threads.\"\"\"\n+    if sys.platform == 'emscripten':\n+        # pytest-run-parallel isn't installed under Pyodide (no wasm wheel),\n+        # so `add_marker('thread_unsafe')` would raise and abort collection.\n+        return",
+          "in_reply_to_id": null,
+          "created_at": "2026-05-11T14:20:11Z"
+        },
+        {
+          "id": 3219642371,
+          "user": "davidhewitt",
+          "body": "`maturin` had a new release yesterday so this can be cleaned up.",
+          "path": "pydantic-core/pyproject.toml",
+          "line": null,
+          "diff_hunk": "@@ -1,4 +1,9 @@\n [build-system]\n+# Stays on a released maturin so PEP 517 builds keep working under the MSRV\n+# (rustc 1.88) — building maturin `main` from source needs rustc 1.89. The\n+# pyemscripten path uses `pyodide build --no-isolation` (see Makefile) so it\n+# can pre-install maturin `main` (which has the PEP 783 `pyemscripten_*_wasm32`\n+# tag from PyO3/maturin#3163) into the build env without affecting other builds.",
+          "in_reply_to_id": null,
+          "created_at": "2026-05-11T14:21:49Z"
+        },
+        {
+          "id": 3219647382,
+          "user": "davidhewitt",
+          "body": "I don't see much point in adding a `skip_emscripten` mark; isn't this just trivially `pytest.mark.skipif(sys.platform == 'emscripten')`?",
+          "path": "tests/conftest.py",
+          "line": null,
+          "diff_hunk": "@@ -198,6 +201,16 @@ def generate(*args: Any, **kwargs: Any) -> Any:\n # `pytest_collection_modifyitems` (which is the last collection hook to be run).\n def pytest_itemcollected(item: Item) -> None:\n     \"\"\"Mark tests as thread unsafe if they make use of fixtures that doesn't play well across threads.\"\"\"\n+    if sys.platform == 'emscripten':\n+        # pytest-run-parallel isn't installed under Pyodide (no wasm wheel),\n+        # so `add_marker('thread_unsafe')` would raise and abort collection.\n+        return\n     fixtures: tuple[str, ...] = getattr(item, 'fixturenames', ())\n     if any(fixture in fixtures for fixture in _thread_unsafe_fixtures):\n         item.add_marker('thread_unsafe')\n+\n+\n+def pytest_runtest_setup(item: Item) -> None:\n+    if sys.platform == 'emscripten':\n+        for marker in item.iter_markers(name='skip_emscripten'):",
+          "in_reply_to_id": null,
+          "created_at": "2026-05-11T14:22:37Z"
+        },
+        {
+          "id": 3219671471,
+          "user": "davidhewitt",
+          "body": "Have you got an issue link for this?",
+          "path": ".github/scripts/pyemscripten-run-tests.sh",
+          "line": null,
+          "diff_hunk": "@@ -0,0 +1,95 @@\n+#!/usr/bin/env bash\n+# Invoked by .github/workflows/ci.yml. Requires `pyodide` on PATH and the\n+# freshly built wheels in pydantic-core/dist/ (pyemscripten) and dist/\n+# (pure-Python pydantic).\n+set -euo pipefail\n+\n+VENV_DIR=\".venv-pyodide\"\n+\n+if [ ! -d \"${VENV_DIR}\" ]; then\n+    pyodide venv \"${VENV_DIR}\"\n+fi\n+# shellcheck disable=SC1090\n+source \"${VENV_DIR}/bin/activate\"\n+\n+shopt -s nullglob\n+# Accept the PEP 783 `pyemscripten_<abi>_wasm32` tag and the legacy\n+# `emscripten_X_Y_Z_wasm32` tag so toolchain regressions surface here.\n+core_wheels=(\n+    pydantic-core/dist/pydantic_core-*-cp*-pyemscripten_*_wasm32.whl\n+    pydantic-core/dist/pydantic_core-*-cp*-emscripten_*_wasm32.whl\n+)\n+pyd_wheels=(dist/pydantic-*-py3-none-any.whl)\n+shopt -u nullglob\n+\n+if [ ${#core_wheels[@]} -eq 0 ]; then\n+    echo \"no pydantic-core wasm wheel in pydantic-core/dist/\" >&2\n+    exit 1\n+fi\n+if [ ${#pyd_wheels[@]} -eq 0 ]; then\n+    echo \"no pydantic wheel in dist/\" >&2\n+    exit 1\n+fi\n+\n+# --force-reinstall here so iteration picks up freshly-built binaries even\n+# when the wheel's version string is unchanged.\n+pip install --force-reinstall --no-deps \"${core_wheels[0]}\" \"${pyd_wheels[0]}\"\n+# Deliberately omitted (no wasm wheels / unsupported in Pyodide):\n+#   pytest-timeout (uses signal.setitimer; `timeout` marker registered in\n+#       pyproject.toml as a no-op), pytest-examples (depends on black/aiohttp),\n+#   pytest-benchmark, pytest-codspeed, pytest-memray, pytest-run-parallel,\n+#   cloudpickle, cffi, pandas, numpy.\n+pip install \\\n+    pytest \\\n+    pytest-mock \\\n+    pytest-pretty \\\n+    dirty-equals \\\n+    hypothesis \\\n+    inline-snapshot \\\n+    typing-inspection \\\n+    typing-extensions \\\n+    annotated-types \\\n+    eval-type-backport \\\n+    jsonschema \\\n+    pytz \\\n+    tzdata\n+\n+# `--override-ini=addopts=` strips the project's `--benchmark-*` defaults\n+# (pytest-benchmark has no wasm wheel; pytest would reject them as\n+# unrecognized). `-p no:timeout` because pytest-timeout is not installed.\n+pytest_log=$(mktemp)\n+plain_log=$(mktemp)\n+trap 'rm -f \"${pytest_log}\" \"${plain_log}\"' EXIT\n+set +e\n+pytest \\\n+    --override-ini='addopts=' \\\n+    -p no:cacheprovider \\\n+    -p no:timeout \\\n+    --ignore=tests/pydantic_core/benchmarks \\\n+    --ignore=tests/mypy \\\n+    --ignore=tests/typechecking \\\n+    --ignore=tests/benchmarks \\\n+    --ignore=tests/test_docs.py \\\n+    tests/pydantic_core \\\n+    tests 2>&1 | tee \"${pytest_log}\"\n+pytest_exit=${PIPESTATUS[0]}\n+set -e\n+\n+# Strip ANSI escapes pytest-pretty emits, so the guard below greps the same\n+# text humans see rather than the colourised byte stream.\n+sed -E $'s/\\x1b\\\\[[0-9;]*[a-zA-Z]//g' \"${pytest_log}\" > \"${plain_log}\"\n+\n+# Pyodide 314 alphas crash during CPython interpreter teardown after pytest\n+# returns -- the wasm vtable goes south *after* the test summary prints,\n+# making the process exit non-zero on x86_64 GH runners. Trust pytest's own\n+# summary line: if it reports a clean run and the only failure signal is the\n+# teardown crash, treat the job as green.",
+          "in_reply_to_id": null,
+          "created_at": "2026-05-11T14:25:49Z"
+        },
+        {
+          "id": 3219675977,
+          "user": "davidhewitt",
+          "body": "I'm not entirely convinced this is the right location; other scrips have been situated in the project root and probably good enough for now?",
+          "path": "pyemscripten-run-tests.sh",
+          "line": 1,
+          "diff_hunk": "",
+          "in_reply_to_id": null,
+          "created_at": "2026-05-11T14:26:29Z"
+        },
+        {
+          "id": 3219680546,
+          "user": "davidhewitt",
+          "body": "I would like to be able to run this locally, probably from the root makefile.",
+          "path": ".github/scripts/pyemscripten-run-tests.sh",
+          "line": null,
+          "diff_hunk": "@@ -0,0 +1,95 @@\n+#!/usr/bin/env bash\n+# Invoked by .github/workflows/ci.yml. Requires `pyodide` on PATH and the\n+# freshly built wheels in pydantic-core/dist/ (pyemscripten) and dist/\n+# (pure-Python pydantic).",
+          "in_reply_to_id": null,
+          "created_at": "2026-05-11T14:27:08Z"
+        },
+        {
+          "id": 3219684251,
+          "user": "davidhewitt",
+          "body": "I would like a link to these",
+          "path": ".github/workflows/ci.yml",
+          "line": null,
+          "diff_hunk": "@@ -297,6 +297,148 @@ jobs:\n           name: pydantic_core_wasm_wheels\n           path: pydantic-core/dist\n \n+  core-build-pyemscripten:\n+    name: core / Build pyemscripten wheel (Pyodide ${{ matrix.pyodide.version }})\n+    # Ungated so `core-test-pyemscripten` runs on every PR. Re-enable the gate\n+    # below to match other heavy `core-build*` jobs (also drop\n+    # `core-test-pyemscripten` from `check.needs`).\n+    # if: startsWith(github.ref, 'refs/tags/') || github.ref == 'refs/heads/main' || contains(github.event.pull_request.labels.*.name, 'full build')\n+    runs-on: ubuntu-latest\n+    timeout-minutes: 30\n+    strategy:\n+      fail-fast: false\n+      matrix:\n+        pyodide:\n+          # `pyodide xbuildenv install 314.0.0a1` requires *host* Python 3.14\n+          # and emsdk 5.0.3 exactly; mismatches fail with a vague \"is not\n+          # compatible\" error. Bump these together when 314.0.0 stable ships.\n+          - version: '314.0.0a1'\n+            python: '3.14'\n+            emsdk: '5.0.3'\n+            abi: '2026_0'\n+    env:\n+      PYODIDE_VERSION: ${{ matrix.pyodide.version }}\n+      EMSDK_VERSION: ${{ matrix.pyodide.emsdk }}\n+    steps:\n+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2\n+        with:\n+          persist-credentials: false\n+\n+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0\n+        with:\n+          python-version: ${{ matrix.pyodide.python }}\n+\n+      - name: Install rust nightly\n+        # Pyodide 314's emcc passes nightly-only `-Z link-native-libraries`\n+        # and `-Z emscripten-wasm-eh`; revisit when those flags stabilise.",
+          "in_reply_to_id": null,
+          "created_at": "2026-05-11T14:27:40Z"
+        },
+        {
+          "id": 3230948912,
+          "user": "greateggsgreg",
+          "body": "No longer relevant - this used to be the guidance for older versions of pyodide, but now the latest rust toolchain works fine which I missed. Removed.",
+          "path": ".github/workflows/ci.yml",
+          "line": null,
+          "diff_hunk": "@@ -297,6 +297,148 @@ jobs:\n           name: pydantic_core_wasm_wheels\n           path: pydantic-core/dist\n \n+  core-build-pyemscripten:\n+    name: core / Build pyemscripten wheel (Pyodide ${{ matrix.pyodide.version }})\n+    # Ungated so `core-test-pyemscripten` runs on every PR. Re-enable the gate\n+    # below to match other heavy `core-build*` jobs (also drop\n+    # `core-test-pyemscripten` from `check.needs`).\n+    # if: startsWith(github.ref, 'refs/tags/') || github.ref == 'refs/heads/main' || contains(github.event.pull_request.labels.*.name, 'full build')\n+    runs-on: ubuntu-latest\n+    timeout-minutes: 30\n+    strategy:\n+      fail-fast: false\n+      matrix:\n+        pyodide:\n+          # `pyodide xbuildenv install 314.0.0a1` requires *host* Python 3.14\n+          # and emsdk 5.0.3 exactly; mismatches fail with a vague \"is not\n+          # compatible\" error. Bump these together when 314.0.0 stable ships.\n+          - version: '314.0.0a1'\n+            python: '3.14'\n+            emsdk: '5.0.3'\n+            abi: '2026_0'\n+    env:\n+      PYODIDE_VERSION: ${{ matrix.pyodide.version }}\n+      EMSDK_VERSION: ${{ matrix.pyodide.emsdk }}\n+    steps:\n+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2\n+        with:\n+          persist-credentials: false\n+\n+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0\n+        with:\n+          python-version: ${{ matrix.pyodide.python }}\n+\n+      - name: Install rust nightly\n+        # Pyodide 314's emcc passes nightly-only `-Z link-native-libraries`\n+        # and `-Z emscripten-wasm-eh`; revisit when those flags stabilise.",
+          "in_reply_to_id": 3219684251,
+          "created_at": "2026-05-13T01:50:00Z"
+        },
+        {
+          "id": 3230973149,
+          "user": "greateggsgreg",
+          "body": "Yeah I couldn't really find a good place to put this. I thought maybe `.github/bin` or `.github/scripts` that I've seen on other projects like cryptography ( https://github.com/pyca/cryptography/tree/main/.github/bin ), but defer to you on where this should be",
+          "path": "pyemscripten-run-tests.sh",
+          "line": 1,
+          "diff_hunk": "",
+          "in_reply_to_id": 3219675977,
+          "created_at": "2026-05-13T01:54:49Z"
+        },
+        {
+          "id": 3231042765,
+          "user": "greateggsgreg",
+          "body": "Added a sample build and test script `pyemscripten-test-local.sh` in the root. Same sort-of issue regarding script location but it works.",
+          "path": ".github/scripts/pyemscripten-run-tests.sh",
+          "line": null,
+          "diff_hunk": "@@ -0,0 +1,95 @@\n+#!/usr/bin/env bash\n+# Invoked by .github/workflows/ci.yml. Requires `pyodide` on PATH and the\n+# freshly built wheels in pydantic-core/dist/ (pyemscripten) and dist/\n+# (pure-Python pydantic).",
+          "in_reply_to_id": 3219680546,
+          "created_at": "2026-05-13T02:11:56Z"
+        },
+        {
+          "id": 3231084761,
+          "user": "greateggsgreg",
+          "body": "So while pytest itself would return 0, the runtime then crashes after. Figured out this was due to conftest.py's eventual import - a simple repro with pyodide 314.0.0a1 (but not any of the other stable versions of pyodide) is ` python -c \"from jsonschema import Draft202012Validator\"`. Definitely strange so will see if I can get to the bottom of this",
+          "path": ".github/scripts/pyemscripten-run-tests.sh",
+          "line": null,
+          "diff_hunk": "@@ -0,0 +1,95 @@\n+#!/usr/bin/env bash\n+# Invoked by .github/workflows/ci.yml. Requires `pyodide` on PATH and the\n+# freshly built wheels in pydantic-core/dist/ (pyemscripten) and dist/\n+# (pure-Python pydantic).\n+set -euo pipefail\n+\n+VENV_DIR=\".venv-pyodide\"\n+\n+if [ ! -d \"${VENV_DIR}\" ]; then\n+    pyodide venv \"${VENV_DIR}\"\n+fi\n+# shellcheck disable=SC1090\n+source \"${VENV_DIR}/bin/activate\"\n+\n+shopt -s nullglob\n+# Accept the PEP 783 `pyemscripten_<abi>_wasm32` tag and the legacy\n+# `emscripten_X_Y_Z_wasm32` tag so toolchain regressions surface here.\n+core_wheels=(\n+    pydantic-core/dist/pydantic_core-*-cp*-pyemscripten_*_wasm32.whl\n+    pydantic-core/dist/pydantic_core-*-cp*-emscripten_*_wasm32.whl\n+)\n+pyd_wheels=(dist/pydantic-*-py3-none-any.whl)\n+shopt -u nullglob\n+\n+if [ ${#core_wheels[@]} -eq 0 ]; then\n+    echo \"no pydantic-core wasm wheel in pydantic-core/dist/\" >&2\n+    exit 1\n+fi\n+if [ ${#pyd_wheels[@]} -eq 0 ]; then\n+    echo \"no pydantic wheel in dist/\" >&2\n+    exit 1\n+fi\n+\n+# --force-reinstall here so iteration picks up freshly-built binaries even\n+# when the wheel's version string is unchanged.\n+pip install --force-reinstall --no-deps \"${core_wheels[0]}\" \"${pyd_wheels[0]}\"\n+# Deliberately omitted (no wasm wheels / unsupported in Pyodide):\n+#   pytest-timeout (uses signal.setitimer; `timeout` marker registered in\n+#       pyproject.toml as a no-op), pytest-examples (depends on black/aiohttp),\n+#   pytest-benchmark, pytest-codspeed, pytest-memray, pytest-run-parallel,\n+#   cloudpickle, cffi, pandas, numpy.\n+pip install \\\n+    pytest \\\n+    pytest-mock \\\n+    pytest-pretty \\\n+    dirty-equals \\\n+    hypothesis \\\n+    inline-snapshot \\\n+    typing-inspection \\\n+    typing-extensions \\\n+    annotated-types \\\n+    eval-type-backport \\\n+    jsonschema \\\n+    pytz \\\n+    tzdata\n+\n+# `--override-ini=addopts=` strips the project's `--benchmark-*` defaults\n+# (pytest-benchmark has no wasm wheel; pytest would reject them as\n+# unrecognized). `-p no:timeout` because pytest-timeout is not installed.\n+pytest_log=$(mktemp)\n+plain_log=$(mktemp)\n+trap 'rm -f \"${pytest_log}\" \"${plain_log}\"' EXIT\n+set +e\n+pytest \\\n+    --override-ini='addopts=' \\\n+    -p no:cacheprovider \\\n+    -p no:timeout \\\n+    --ignore=tests/pydantic_core/benchmarks \\\n+    --ignore=tests/mypy \\\n+    --ignore=tests/typechecking \\\n+    --ignore=tests/benchmarks \\\n+    --ignore=tests/test_docs.py \\\n+    tests/pydantic_core \\\n+    tests 2>&1 | tee \"${pytest_log}\"\n+pytest_exit=${PIPESTATUS[0]}\n+set -e\n+\n+# Strip ANSI escapes pytest-pretty emits, so the guard below greps the same\n+# text humans see rather than the colourised byte stream.\n+sed -E $'s/\\x1b\\\\[[0-9;]*[a-zA-Z]//g' \"${pytest_log}\" > \"${plain_log}\"\n+\n+# Pyodide 314 alphas crash during CPython interpreter teardown after pytest\n+# returns -- the wasm vtable goes south *after* the test summary prints,\n+# making the process exit non-zero on x86_64 GH runners. Trust pytest's own\n+# summary line: if it reports a clean run and the only failure signal is the\n+# teardown crash, treat the job as green.",
+          "in_reply_to_id": 3219671471,
+          "created_at": "2026-05-13T02:25:36Z"
+        },
+        {
+          "id": 3233779556,
+          "user": "greateggsgreg",
+          "body": "Found the underlying cause and posted to https://github.com/pyodide/pyodide/issues/6234",
+          "path": ".github/scripts/pyemscripten-run-tests.sh",
+          "line": null,
+          "diff_hunk": "@@ -0,0 +1,95 @@\n+#!/usr/bin/env bash\n+# Invoked by .github/workflows/ci.yml. Requires `pyodide` on PATH and the\n+# freshly built wheels in pydantic-core/dist/ (pyemscripten) and dist/\n+# (pure-Python pydantic).\n+set -euo pipefail\n+\n+VENV_DIR=\".venv-pyodide\"\n+\n+if [ ! -d \"${VENV_DIR}\" ]; then\n+    pyodide venv \"${VENV_DIR}\"\n+fi\n+# shellcheck disable=SC1090\n+source \"${VENV_DIR}/bin/activate\"\n+\n+shopt -s nullglob\n+# Accept the PEP 783 `pyemscripten_<abi>_wasm32` tag and the legacy\n+# `emscripten_X_Y_Z_wasm32` tag so toolchain regressions surface here.\n+core_wheels=(\n+    pydantic-core/dist/pydantic_core-*-cp*-pyemscripten_*_wasm32.whl\n+    pydantic-core/dist/pydantic_core-*-cp*-emscripten_*_wasm32.whl\n+)\n+pyd_wheels=(dist/pydantic-*-py3-none-any.whl)\n+shopt -u nullglob\n+\n+if [ ${#core_wheels[@]} -eq 0 ]; then\n+    echo \"no pydantic-core wasm wheel in pydantic-core/dist/\" >&2\n+    exit 1\n+fi\n+if [ ${#pyd_wheels[@]} -eq 0 ]; then\n+    echo \"no pydantic wheel in dist/\" >&2\n+    exit 1\n+fi\n+\n+# --force-reinstall here so iteration picks up freshly-built binaries even\n+# when the wheel's version string is unchanged.\n+pip install --force-reinstall --no-deps \"${core_wheels[0]}\" \"${pyd_wheels[0]}\"\n+# Deliberately omitted (no wasm wheels / unsupported in Pyodide):\n+#   pytest-timeout (uses signal.setitimer; `timeout` marker registered in\n+#       pyproject.toml as a no-op), pytest-examples (depends on black/aiohttp),\n+#   pytest-benchmark, pytest-codspeed, pytest-memray, pytest-run-parallel,\n+#   cloudpickle, cffi, pandas, numpy.\n+pip install \\\n+    pytest \\\n+    pytest-mock \\\n+    pytest-pretty \\\n+    dirty-equals \\\n+    hypothesis \\\n+    inline-snapshot \\\n+    typing-inspection \\\n+    typing-extensions \\\n+    annotated-types \\\n+    eval-type-backport \\\n+    jsonschema \\\n+    pytz \\\n+    tzdata\n+\n+# `--override-ini=addopts=` strips the project's `--benchmark-*` defaults\n+# (pytest-benchmark has no wasm wheel; pytest would reject them as\n+# unrecognized). `-p no:timeout` because pytest-timeout is not installed.\n+pytest_log=$(mktemp)\n+plain_log=$(mktemp)\n+trap 'rm -f \"${pytest_log}\" \"${plain_log}\"' EXIT\n+set +e\n+pytest \\\n+    --override-ini='addopts=' \\\n+    -p no:cacheprovider \\\n+    -p no:timeout \\\n+    --ignore=tests/pydantic_core/benchmarks \\\n+    --ignore=tests/mypy \\\n+    --ignore=tests/typechecking \\\n+    --ignore=tests/benchmarks \\\n+    --ignore=tests/test_docs.py \\\n+    tests/pydantic_core \\\n+    tests 2>&1 | tee \"${pytest_log}\"\n+pytest_exit=${PIPESTATUS[0]}\n+set -e\n+\n+# Strip ANSI escapes pytest-pretty emits, so the guard below greps the same\n+# text humans see rather than the colourised byte stream.\n+sed -E $'s/\\x1b\\\\[[0-9;]*[a-zA-Z]//g' \"${pytest_log}\" > \"${plain_log}\"\n+\n+# Pyodide 314 alphas crash during CPython interpreter teardown after pytest\n+# returns -- the wasm vtable goes south *after* the test summary prints,\n+# making the process exit non-zero on x86_64 GH runners. Trust pytest's own\n+# summary line: if it reports a clean run and the only failure signal is the\n+# teardown crash, treat the job as green.",
+          "in_reply_to_id": 3219671471,
+          "created_at": "2026-05-13T11:29:41Z"
+        }
+      ],
+      "issue_comments": [
+        {
+          "id": 4518207308,
+          "user": "Viicos",
+          "body": "Thanks, handled in https://github.com/pydantic/pydantic/pull/13199.",
+          "created_at": "2026-05-22T11:22:27Z"
+        }
+      ]
+    },
+    {
+      "number": 13155,
+      "title": "support rfc2822 temporal_mode in pydantic_core.to_json",
+      "author": "ericbuehl",
+      "state": "open",
+      "created_at": "2026-05-05T20:47:20Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4383085160,
+          "user": "ericbuehl",
+          "body": "please review",
+          "created_at": "2026-05-05T21:12:24Z"
+        },
+        {
+          "id": 4415425715,
+          "user": "ericbuehl",
+          "body": "@Viicos would you prefer if I opened an issue for this first?",
+          "created_at": "2026-05-10T13:39:22Z"
+        },
+        {
+          "id": 4415584557,
+          "user": "Viicos",
+          "body": "Hi @ericbuehl, yes opening an issue before would be great! This probably needs some discussion before implementing.",
+          "created_at": "2026-05-10T14:56:59Z"
+        }
+      ]
+    },
+    {
+      "number": 13154,
+      "title": "fix: Decimal JSON schema pattern accepts scientific notation in serialization mode",
+      "author": "zons-zhaozhy",
+      "state": "closed",
+      "created_at": "2026-05-05T11:26:39Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13153,
+      "title": "fix: Decimal JSON schema pattern rejects pydantic's own scientific notation output",
+      "author": "zons-zhaozhy",
+      "state": "closed",
+      "created_at": "2026-05-05T08:18:50Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13152,
+      "title": "Avoid redundant dictionary lookups in `_migration.py`",
+      "author": "tempoo04",
+      "state": "closed",
+      "created_at": "2026-05-05T08:11:08Z",
+      "merged_at": "2026-05-05T08:25:39Z",
+      "reviews": [
+        {
+          "id": 4226324541,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-05-05T08:17:24Z",
+          "commit_id": "21a984fecfc7316697013ca12a75127439449f1c"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "number": 13151,
+      "title": "Fix TzInfo shutdown SIGSEGV via Python-level inheritance (pydantic#12…",
+      "author": "rrauenza",
+      "state": "closed",
+      "created_at": "2026-05-05T06:57:22Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4377192561,
+          "user": "Viicos",
+          "body": "Closing as per https://github.com/pydantic/pydantic/issues/12867#issuecomment-4377190848.",
+          "created_at": "2026-05-05T07:09:27Z"
+        }
+      ]
+    },
+    {
+      "number": 13150,
+      "title": "Fix SIGSEGV at interpreter shutdown when TzInfo is alive (pydantic#12…",
+      "author": "rrauenza",
+      "state": "closed",
+      "created_at": "2026-05-05T06:19:49Z",
+      "merged_at": null,
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4376949673,
+          "user": "rrauenza",
+          "body": "https://github.com/pydantic/pydantic/issues/12867",
+          "created_at": "2026-05-05T06:21:08Z"
+        },
+        {
+          "id": 4377191688,
+          "user": "Viicos",
+          "body": "Closing as per https://github.com/pydantic/pydantic/issues/12867#issuecomment-4377190848.",
+          "created_at": "2026-05-05T07:09:16Z"
+        }
+      ]
+    },
+    {
+      "number": 13149,
+      "title": "Warn on unknown config keys in the Mypy plugin",
+      "author": "GonzalezSanchez",
+      "state": "closed",
+      "created_at": "2026-05-04T19:32:11Z",
+      "merged_at": "2026-06-16T07:35:04Z",
+      "reviews": [
+        {
+          "id": 4303619989,
+          "user": "Viicos",
+          "state": "CHANGES_REQUESTED",
+          "body": "Following what [is done](https://github.com/python/mypy/blob/1bbd6da6ab8f1b36d5cb9ab3358da0cfa9714f6e/mypy/config_parser.py#L517) for Mypy itself,I think we'll want to:\r\n- not use `warnings`, just a print to `stderr`.\r\n- One print per unknown config\r\n- use the same message pattern: `[pydantic-mypy]: Unrecognized option: {name} = {value}`",
+          "submitted_at": "2026-05-16T12:07:41Z",
+          "commit_id": "a72bd8559b06ab0eef0a40340768a609091060d4"
+        },
+        {
+          "id": 4497462970,
+          "user": "Viicos",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2026-06-15T12:46:38Z",
+          "commit_id": "10505c1031188d5307db57ef7afd92d8b7407b2f"
+        },
+        {
+          "id": 4504181675,
+          "user": "Viicos",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-06-16T07:34:55Z",
+          "commit_id": "08d7b3abefc002efa8d10ece26a4115dba388828"
+        }
+      ],
+      "review_comments": [
+        {
+          "id": 3413535976,
+          "user": "Viicos",
+          "body": "```suggestion\n```",
+          "path": "tests/mypy/test_mypy.py",
+          "line": null,
+          "diff_hunk": "@@ -197,6 +197,28 @@ def test_bad_toml_config() -> None:\n     assert str(e.value) == 'Configuration value must be a boolean for key: init_forbid_extra'\n \n \n+def test_unknown_toml_config_key(capsys: pytest.CaptureFixture[str]) -> None:\n+    full_config_filename = 'tests/mypy/configs/pyproject-plugin-unknown-param.toml'\n+    full_filename = 'tests/mypy/modules/generics.py'  # File doesn't matter\n+\n+    command = [full_filename, '--config-file', full_config_filename, '--show-error-codes']\n+    print(f'\\nExecuting: mypy {\" \".join(command)}')  # makes it easier to debug as necessary",
+          "in_reply_to_id": null,
+          "created_at": "2026-06-15T12:46:24Z"
+        },
+        {
+          "id": 3413536796,
+          "user": "Viicos",
+          "body": "```suggestion\n```",
+          "path": "tests/mypy/test_mypy.py",
+          "line": null,
+          "diff_hunk": "@@ -197,6 +197,28 @@ def test_bad_toml_config() -> None:\n     assert str(e.value) == 'Configuration value must be a boolean for key: init_forbid_extra'\n \n \n+def test_unknown_toml_config_key(capsys: pytest.CaptureFixture[str]) -> None:\n+    full_config_filename = 'tests/mypy/configs/pyproject-plugin-unknown-param.toml'\n+    full_filename = 'tests/mypy/modules/generics.py'  # File doesn't matter\n+\n+    command = [full_filename, '--config-file', full_config_filename, '--show-error-codes']\n+    print(f'\\nExecuting: mypy {\" \".join(command)}')  # makes it easier to debug as necessary\n+    mypy_api.run(command)\n+    captured = capsys.readouterr()\n+    assert '[pydantic-mypy]: Unrecognized option: warn_untyped_fields = True' in captured.err\n+\n+\n+def test_unknown_ini_config_key(capsys: pytest.CaptureFixture[str]) -> None:\n+    full_config_filename = 'tests/mypy/configs/mypy-plugin-unknown-param.ini'\n+    full_filename = 'tests/mypy/modules/generics.py'  # File doesn't matter\n+\n+    command = [full_filename, '--config-file', full_config_filename, '--show-error-codes']\n+    print(f'\\nExecuting: mypy {\" \".join(command)}')  # makes it easier to debug as necessary",
+          "in_reply_to_id": null,
+          "created_at": "2026-06-15T12:46:31Z"
+        }
+      ],
+      "issue_comments": [
+        {
+          "id": 4716078973,
+          "user": "Viicos",
+          "body": "Thanks @GonzalezSanchez ",
+          "created_at": "2026-06-16T07:34:46Z"
+        }
+      ]
+    },
+    {
+      "number": 13147,
+      "title": "Adapt `pydantic-core` linker flags on macOS",
+      "author": "Viicos",
+      "state": "closed",
+      "created_at": "2026-05-03T11:04:53Z",
+      "merged_at": "2026-05-06T07:56:54Z",
+      "reviews": [
+        {
+          "id": 4234222358,
+          "user": "hramezani",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2026-05-06T07:53:05Z",
+          "commit_id": "7d4572b2d2b9ce6940b28ae48b328ccacdaf89bd"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": [
+        {
+          "id": 4371476095,
+          "user": "washingtoneg",
+          "body": "Hi @Viicos,\r\n\r\nThis was discussed in https://github.com/pyca/cryptography/issues/7847 (2022). At the time, @reaperhulk said:\r\n\r\n\"I don't have any issue with adding that flag to our wheel builders going forward.\"\r\n\r\nThe regression went away on its own then (a rustc bump changed the default padding).",
+          "created_at": "2026-05-04T13:34:19Z"
+        },
+        {
+          "id": 4371541174,
+          "user": "Viicos",
+          "body": "In the issue you opened, you mentioned:\r\n\r\n> Homebrew's post-install fixup (install_name_tool) needs that padding to rewrite dylib paths after installation. When it's absent, brew install/brew upgrade fails for any formula that vendors pydantic-core.\r\n\r\n",
+          "created_at": "2026-05-04T13:43:10Z"
+        },
+        {
+          "id": 4371918701,
+          "user": "washingtoneg",
+          "body": "> In the issue you opened, you mentioned:\r\n> \r\n> > Homebrew's post-install fixup (install_name_tool) needs that padding to rewrite dylib paths after installation. When it's absent, brew install/brew upgrade fails for any formula that vendors pydantic-core.\r\n\r\n@Viicos, there's no Homebrew issue that I'm aware of. It was first caught by a user running brew upgrade on an internal formula that vendors cryptography. The error surfaced when cryptography 46.0.4 shipped, which was the first release built on macos-15 runners.\r\n\r\nThe closest public tracking is:\r\n- The pyca/cryptography PR that just merged: https://github.com/pyca/cryptography/pull/14777\r\n- A similar fix in an unrelated project that hit the same thing: https://github.com/dkdc-io/zorto/pull/155\r\n\r\nThe root cause is documented in the cryptography PR description if you want to link to it from here.",
+          "created_at": "2026-05-04T14:35:56Z"
+        },
+        {
+          "id": 4386094714,
+          "user": "Viicos",
+          "body": "Thanks @washingtoneg, @davidhewitt I'm merging but feel free to investigate deeper if this needs to live in PyO3.",
+          "created_at": "2026-05-06T07:56:35Z"
+        }
+      ]
+    }
+  ]
+}
