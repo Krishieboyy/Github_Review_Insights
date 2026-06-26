@@ -10,7 +10,7 @@ and "a reviewer can run it on their own repo" stays trivially true.
 
 The repo ships with a **pre-cached pull of `pydantic/pydantic` (150 PRs, 39 reviewers)**,
 so the whole thing runs on real data from a clean clone with **no GitHub token and no
-API key**.
+API key** — including a small **web UI** served by the same process.
 
 ---
 
@@ -26,7 +26,15 @@ pip install -r requirements.txt
 uvicorn app.main:app
 ```
 
-Then, in another terminal (or open <http://127.0.0.1:8000/docs> for the interactive UI):
+Then open the **web UI** in a browser:
+
+> **<http://127.0.0.1:8000/app>** — pick a reviewer from the dropdown (real logins from
+> the cache) and click *Get insight*.
+
+Open it **through the server** (`/app`), not by double-clicking the HTML file — a page
+loaded from `file://` can't reach the API.
+
+Or hit the API directly (interactive Swagger docs at <http://127.0.0.1:8000/docs>):
 
 ```bash
 curl http://127.0.0.1:8000/reviewers
@@ -56,12 +64,20 @@ curl http://127.0.0.1:8000/reviewers/Viicos/insight   # now includes the grounde
 
 | Endpoint | What it returns | Needs a key? |
 |---|---|---|
+| `GET /app` | The single-file web UI (static HTML, consumes the API below) | no |
 | `GET /` | Service info + which repos are cached | no |
 | `GET /reviewers` | Roster of reviewers found + review/comment/PR counts | no |
 | `GET /reviewers/{login}/stats` | Pure rule-layer numbers for one reviewer | no |
 | `GET /reviewers/{login}/insight` | Rule stats + classified comment distribution + the one synthesized insight | LLM part needs `GEMINI_API_KEY`; degrades to rules-only without |
 
-All accept an optional `?repo=owner/name` (defaults to the only cached repo).
+The `/reviewers*` endpoints accept an optional `?repo=owner/name` (defaults to the only
+cached repo).
+
+**Web UI ([`static/index.html`](static/index.html)):** plain HTML + vanilla JS, no build
+step. It loads the reviewer list from `GET /reviewers`, calls `GET /reviewers/{login}/insight`,
+and shows the synthesized insight prominently with the key rule stats (latency, verdict mix,
+nit ratio) and the classified tone/substance distribution below. With no key it shows the
+rule stats and a note that the LLM insight needs a Gemini key.
 
 ---
 
@@ -136,7 +152,9 @@ app/
   rules.py           deterministic signals (the dependable core)
   llm.py             Gemini classify() + classify_many() + synthesize()
   pipeline.py        ingest -> rules -> sample -> classify -> synthesize
-  main.py            FastAPI app + endpoints
+  main.py            FastAPI app + endpoints + serves the /app UI
+static/
+  index.html         single-file web UI (HTML + vanilla JS, no build step)
 cache/
   pydantic__pydantic.json   shipped demo data (150 PRs) — runs token-free
 data/
