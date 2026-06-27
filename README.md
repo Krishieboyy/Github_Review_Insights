@@ -195,7 +195,3 @@ tests/
   queue with concurrency limits), and cache classifications so re-runs cost nothing.
 
 ---
-
-## Design note (200 words)
-
-_Written separately._
